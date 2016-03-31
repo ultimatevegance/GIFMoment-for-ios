@@ -45,6 +45,7 @@
 		72F565CE1CA17E260015E029 /* NSGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F565CD1CA17E260015E029 /* NSGIF.m */; };
 		72F565D11CA184330015E029 /* ModelGIFCapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F565D01CA184330015E029 /* ModelGIFCapViewController.m */; };
 		72F565D31CA18D810015E029 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72F565D21CA18D810015E029 /* MobileCoreServices.framework */; };
+		8DCF6B021CAD716C00F6E83F /* brand.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DCF6B011CAD716C00F6E83F /* brand.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +122,7 @@
 		72F565CF1CA184330015E029 /* ModelGIFCapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelGIFCapViewController.h; sourceTree = "<group>"; };
 		72F565D01CA184330015E029 /* ModelGIFCapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelGIFCapViewController.m; sourceTree = "<group>"; };
 		72F565D21CA18D810015E029 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		8DCF6B011CAD716C00F6E83F /* brand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brand.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 				728004921C9D76C900057C0A /* Assets.xcassets */,
 				728004B91C9D7CBA00057C0A /* MTTabController.h */,
 				728004BA1C9D7CBA00057C0A /* MTTabController.m */,
+				8DCF6B011CAD716C00F6E83F /* brand.png */,
 				7222CEEC1CA2D831008ECE97 /* BaseViewController.h */,
 				7222CEED1CA2D831008ECE97 /* BaseViewController.m */,
 				728004871C9D76C900057C0A /* main.m */,
@@ -569,6 +572,7 @@
 				725738AC1CA42818004DBC0C /* brand.png in Resources */,
 				722726C51C9D8C76005BF2DD /* home@3x.png in Resources */,
 				728004EA1C9D887400057C0A /* mine.png in Resources */,
+				8DCF6B021CAD716C00F6E83F /* brand.png in Resources */,
 				722726C61C9D8C76005BF2DD /* explore.png in Resources */,
 				728004961C9D76C900057C0A /* LaunchScreen.storyboard in Resources */,
 				722726C71C9D8C76005BF2DD /* explore@2x.png in Resources */,
