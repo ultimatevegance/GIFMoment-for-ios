@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "61346985A5304C7F746763750ECEC535DF2EA42C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "61346985A5304C7F746763750ECEC535DF2EA42C" : 0,
+    "9A09221186D477058DA9DFA7EC17BE959EEC652C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C8C90964-0570-49C1-866C-EA434A93C33F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "61346985A5304C7F746763750ECEC535DF2EA42C" : "GIFMoment\/",
+    "9A09221186D477058DA9DFA7EC17BE959EEC652C" : "GIFMoment\/GIFMoment\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GIFMoment",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "GIFMoment.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ultimatevegance\/GIFMoment.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "61346985A5304C7F746763750ECEC535DF2EA42C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ultimatevegance\/GIFMoment-for-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9A09221186D477058DA9DFA7EC17BE959EEC652C"
+    }
+  ]
+}
