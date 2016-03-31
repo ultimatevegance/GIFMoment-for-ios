@@ -23,7 +23,6 @@
 		722726D21C9D8DC1005BF2DD /* gif@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 722726CF1C9D8DC1005BF2DD /* gif@2x.png */; };
 		72495E3F1CA1B9AB0044154B /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 72495E3E1CA1B9AB0044154B /* UIImage+animatedGIF.m */; };
 		72495E411CA1B9E10044154B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72495E401CA1B9E10044154B /* ImageIO.framework */; };
-		725738AC1CA42818004DBC0C /* brand.png in Resources */ = {isa = PBXBuildFile; fileRef = 725738AB1CA42818004DBC0C /* brand.png */; };
 		728004881C9D76C900057C0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 728004871C9D76C900057C0A /* main.m */; };
 		7280048B1C9D76C900057C0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7280048A1C9D76C900057C0A /* AppDelegate.m */; };
 		728004911C9D76C900057C0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7280048F1C9D76C900057C0A /* Main.storyboard */; };
@@ -45,6 +44,7 @@
 		72F565CE1CA17E260015E029 /* NSGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F565CD1CA17E260015E029 /* NSGIF.m */; };
 		72F565D11CA184330015E029 /* ModelGIFCapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F565D01CA184330015E029 /* ModelGIFCapViewController.m */; };
 		72F565D31CA18D810015E029 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72F565D21CA18D810015E029 /* MobileCoreServices.framework */; };
+		8D6F1F581CACC755006EFC54 /* brand.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D6F1F571CACC755006EFC54 /* brand.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,7 +83,6 @@
 		72495E3D1CA1B9AB0044154B /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
 		72495E3E1CA1B9AB0044154B /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
 		72495E401CA1B9E10044154B /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
-		725738AB1CA42818004DBC0C /* brand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = brand.png; path = launchScreen/brand.png; sourceTree = "<group>"; };
 		728004831C9D76C900057C0A /* GIFMoment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIFMoment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		728004871C9D76C900057C0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		728004891C9D76C900057C0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -121,6 +120,7 @@
 		72F565CF1CA184330015E029 /* ModelGIFCapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelGIFCapViewController.h; sourceTree = "<group>"; };
 		72F565D01CA184330015E029 /* ModelGIFCapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelGIFCapViewController.m; sourceTree = "<group>"; };
 		72F565D21CA18D810015E029 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		8D6F1F571CACC755006EFC54 /* brand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brand.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +162,6 @@
 		7280047A1C9D76C900057C0A = {
 			isa = PBXGroup;
 			children = (
-				725738AB1CA42818004DBC0C /* brand.png */,
 				72495E401CA1B9E10044154B /* ImageIO.framework */,
 				72F565D21CA18D810015E029 /* MobileCoreServices.framework */,
 				728004851C9D76C900057C0A /* GIFMoment */,
@@ -199,6 +198,7 @@
 		728004861C9D76C900057C0A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8D6F1F571CACC755006EFC54 /* brand.png */,
 				728004E11C9D821000057C0A /* IMAGES */,
 				728004C01C9D7E8000057C0A /* 3rdLi */,
 				728004921C9D76C900057C0A /* Assets.xcassets */,
@@ -566,7 +566,7 @@
 				722726BB1C9D8A68005BF2DD /* message@3x.png in Resources */,
 				722726C41C9D8C76005BF2DD /* home@2x.png in Resources */,
 				722726B61C9D8A55005BF2DD /* mine@3x.png in Resources */,
-				725738AC1CA42818004DBC0C /* brand.png in Resources */,
+				8D6F1F581CACC755006EFC54 /* brand.png in Resources */,
 				722726C51C9D8C76005BF2DD /* home@3x.png in Resources */,
 				728004EA1C9D887400057C0A /* mine.png in Resources */,
 				722726C61C9D8C76005BF2DD /* explore.png in Resources */,
