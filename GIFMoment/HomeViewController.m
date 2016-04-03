@@ -16,10 +16,38 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self _setupNaviItem];
 
 }
-
+- (void)_setupNaviItem{
+    UIButton *locationButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    locationButton.frame = CGRectMake(0, 0, 20, 20);
+    [locationButton setImage:[UIImage imageNamed:@"LLocation"] forState:UIControlStateNormal];
+    [locationButton addTarget:self action:@selector(location :) forControlEvents:UIControlEventTouchDown];
+    UIBarButtonItem *locationItem = [[UIBarButtonItem alloc]initWithCustomView:locationButton];
+    self.navigationItem.leftBarButtonItem = locationItem;
+    
+    UIButton *layoutButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    layoutButton.frame = CGRectMake(0, 0, 20, 20);
+    [layoutButton setImage:[UIImage imageNamed:@"StreamLayout"] forState:UIControlStateNormal];
+    [layoutButton addTarget:self action:@selector(layoutSelect :) forControlEvents:UIControlEventTouchDown];
+    UIBarButtonItem *layoutItem = [[UIBarButtonItem alloc]initWithCustomView:layoutButton];
+    self.navigationItem.rightBarButtonItem = layoutItem;
+    
+    
+}
+- (void)location : (UIBarButtonItem * )location{
+    
+    
+    
+    
+}
+- (void)layoutSelect : (UIBarButtonItem *)layoutSelect{
+    
+    
+    
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -34,5 +62,33 @@
     // Pass the selected object to the new view controller.
 }
 */
+#pragma mark -UITableView Delegate
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return 300;
+}
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    
+    return 1;
+    
+    
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return 10;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSString *identifier = @"MSCell";
+    
+    UITableViewCell *cell =  [tableView dequeueReusableCellWithIdentifier:identifier];
+    if (cell == nil) {
+        cell = [[[NSBundle mainBundle]loadNibNamed:@"MSCell" owner:nil options:nil]lastObject ];
+    }
+    
+    return cell;
+}
+
 
 @end

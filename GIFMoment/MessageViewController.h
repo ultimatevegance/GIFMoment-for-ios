@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
 
-@interface MessageViewController : BaseViewController
+@interface MessageViewController : BaseViewController<UITableViewDelegate,UITableViewDataSource>
 
 @end

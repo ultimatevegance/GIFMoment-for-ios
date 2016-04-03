@@ -33,5 +33,32 @@
     // Pass the selected object to the new view controller.
 }
 */
+#pragma mark -UITableView Delegate
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return 120;
+}
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    
+    return 1;
+    
+    
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return 20;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSString *identifier = @"MessageCell";
+    
+    UITableViewCell *cell =  [tableView dequeueReusableCellWithIdentifier:identifier];
+    if (cell == nil) {
+        cell = [[[NSBundle mainBundle]loadNibNamed:@"MessageCell" owner:nil options:nil]lastObject ];
+    }
+    
+    return cell;
+}
 
 @end

@@ -28,6 +28,7 @@
     self.activityIndicator.hidden = YES;
     self._previewImageView.hidden = YES;
     // Do any additional setup after loading the view.
+    
 }
 - (IBAction)cancel:(id)sender{
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -86,7 +87,7 @@
                 UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"success" message:@"gif created successfully!!" preferredStyle:UIAlertControllerStyleAlert];
                 // TODO保存到本地
                 UIAlertAction *save = [UIAlertAction actionWithTitle:@"save" style:UIAlertActionStyleDefault handler:nil];
-                //todo发状态分享
+                //TODO发状态分享
                 UIAlertAction *share = [UIAlertAction actionWithTitle:@"share" style:UIAlertActionStyleDefault handler:nil];
                 [alert addAction:save];
                 [alert addAction:share];

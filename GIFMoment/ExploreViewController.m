@@ -7,7 +7,7 @@
 //
 
 #import "ExploreViewController.h"
-
+#import "SearchViewController.h"
 @interface ExploreViewController ()
 
 @end
@@ -16,9 +16,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
+    [self _setupNaviItem];
 
+}
+- (void)_setupNaviItem{
+    UIButton *searchButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    searchButton.frame = CGRectMake(0, 0, 20, 20);
+    [searchButton setImage:[UIImage imageNamed:@"search"] forState:UIControlStateNormal];
+    [searchButton addTarget:self action:@selector(search :) forControlEvents:UIControlEventTouchDown];
+    UIBarButtonItem *searchItem = [[UIBarButtonItem alloc]initWithCustomView:searchButton];
+    self.navigationItem.leftBarButtonItem = searchItem;
+
+    
+    
+    
+}
+- (void)search : (UIBarButtonItem *)searchItem{
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    
+    SearchViewController*searchViewCtrl = [storyBoard instantiateViewControllerWithIdentifier:@"Search"];
+    [self.navigationController pushViewController:searchViewCtrl animated:YES];
+
+    
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
