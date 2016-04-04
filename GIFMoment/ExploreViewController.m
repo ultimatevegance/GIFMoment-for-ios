@@ -8,7 +8,9 @@
 
 #import "ExploreViewController.h"
 #import "SearchViewController.h"
+#import "MSTableView.h"
 @interface ExploreViewController ()
+@property (strong, nonatomic) IBOutlet MSTableView *tableView;
 
 @end
 
@@ -17,8 +19,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self _setupNaviItem];
+    [self _setHeaderView];
 
 }
+- (void)_setHeaderView{
+    UIView *headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 360)];
+    headerView.backgroundColor = [UIColor magentaColor];
+   
+    self.tableView.tableHeaderView = headerView;
+    
+   
+    
+    
+}
+
 - (void)_setupNaviItem{
     UIButton *searchButton = [UIButton buttonWithType:UIButtonTypeCustom];
     searchButton.frame = CGRectMake(0, 0, 20, 20);
@@ -54,5 +68,30 @@
     // Pass the selected object to the new view controller.
 }
 */
+#pragma mark -UITableView Delegate
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return 300;
+}
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    
+    return 20;
+    
+    
+}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return 1;
+}
 
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSString *identifier = @"MSCell";
+    
+    UITableViewCell *cell =  [tableView dequeueReusableCellWithIdentifier:identifier];
+    if (cell == nil) {
+        cell = [[[NSBundle mainBundle]loadNibNamed:@"MSCell" owner:nil options:nil]lastObject ];
+    }
+    
+    return cell;
+}
 @end

@@ -9,6 +9,7 @@
 #import "MessageViewController.h"
 
 @interface MessageViewController ()
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -16,7 +17,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self _setHeaderView];
+}
+- (void)_setHeaderView{
+    UIView *headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 300, 0.5)];
+    headerView.backgroundColor = [UIColor clearColor];
+    self.tableView.tableHeaderView = headerView;
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,14 +48,14 @@
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     
-    return 1;
+    return 20;
     
     
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 20;
+    return 1;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -56,6 +64,8 @@
     UITableViewCell *cell =  [tableView dequeueReusableCellWithIdentifier:identifier];
     if (cell == nil) {
         cell = [[[NSBundle mainBundle]loadNibNamed:@"MessageCell" owner:nil options:nil]lastObject ];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        
     }
     
     return cell;

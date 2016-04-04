@@ -73,9 +73,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nrb-HW-H8Q" customClass="MSTableView">
-                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="24" sectionHeaderHeight="2" sectionFooterHeight="2" translatesAutoresizingMaskIntoConstraints="NO" id="Nrb-HW-H8Q" customClass="MSTableView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Dns-qI-VNS" id="990-Yy-gBa"/>
                                     <outlet property="delegate" destination="Dns-qI-VNS" id="eAg-Ok-CwG"/>
@@ -84,13 +84,16 @@
                         </subviews>
                         <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Nrb-HW-H8Q" firstAttribute="top" secondItem="7DG-ud-Xn8" secondAttribute="bottom" id="0G5-AX-pBC"/>
+                            <constraint firstItem="Nrb-HW-H8Q" firstAttribute="height" secondItem="u1v-RO-uQJ" secondAttribute="height" id="1t2-jX-2Nw"/>
                             <constraint firstItem="Nrb-HW-H8Q" firstAttribute="width" secondItem="u1v-RO-uQJ" secondAttribute="width" id="3i4-wI-k6K"/>
                             <constraint firstItem="thG-WE-ldH" firstAttribute="top" secondItem="Nrb-HW-H8Q" secondAttribute="bottom" id="Tc0-Wx-Nbh"/>
                             <constraint firstItem="Nrb-HW-H8Q" firstAttribute="centerX" secondItem="u1v-RO-uQJ" secondAttribute="centerX" id="xzm-mw-nrC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="bem-nd-uI6"/>
+                    <connections>
+                        <outlet property="tableView" destination="Nrb-HW-H8Q" id="nPW-R9-m0x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rtq-dh-L2O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -198,7 +201,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="PjG-2U-B63">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection id="IFZ-CK-Pns">
                                 <cells>
@@ -306,13 +309,32 @@
                     <view key="view" contentMode="scaleToFill" id="OdQ-qj-DI2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="2" sectionFooterHeight="2" translatesAutoresizingMaskIntoConstraints="NO" id="CKn-QR-eqo" customClass="MSTableView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ZXf-yb-6u0" id="U9x-gn-ZTO"/>
+                                    <outlet property="delegate" destination="ZXf-yb-6u0" id="VXt-0z-1yk"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="CKn-QR-eqo" firstAttribute="height" secondItem="OdQ-qj-DI2" secondAttribute="height" id="6lM-vK-EVo"/>
+                            <constraint firstItem="CKn-QR-eqo" firstAttribute="centerX" secondItem="OdQ-qj-DI2" secondAttribute="centerX" id="k30-Lh-u5w"/>
+                            <constraint firstItem="CKn-QR-eqo" firstAttribute="centerY" secondItem="OdQ-qj-DI2" secondAttribute="centerY" id="qj0-57-Q58"/>
+                            <constraint firstItem="CKn-QR-eqo" firstAttribute="width" secondItem="OdQ-qj-DI2" secondAttribute="width" id="u0L-us-ipa"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Explore" id="kJ5-dU-PQK"/>
+                    <connections>
+                        <outlet property="tableView" destination="CKn-QR-eqo" id="kqA-xQ-qgu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nFq-ye-nKq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="347.73333333333335" y="-282.10666666666668"/>
+            <point key="canvasLocation" x="347" y="-283"/>
         </scene>
         <!--GIF-->
         <scene sceneID="9yJ-0T-MIB">
@@ -350,7 +372,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ACg-tj-eDZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="412" y="400.99999999999989"/>
+            <point key="canvasLocation" x="391" y="360"/>
         </scene>
         <!--Message-->
         <scene sceneID="cgL-3Z-Ckq">
@@ -364,9 +386,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bTC-ZL-qvw">
-                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="3" sectionFooterHeight="3" translatesAutoresizingMaskIntoConstraints="NO" id="bTC-ZL-qvw">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="mua-zA-CS4" id="fMy-aL-A7Y"/>
                                     <outlet property="delegate" destination="mua-zA-CS4" id="PKr-RF-hUa"/>
@@ -375,14 +397,16 @@
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="bTC-ZL-qvw" firstAttribute="top" secondItem="o58-uw-318" secondAttribute="bottom" id="0PE-X3-CTb"/>
                             <constraint firstItem="bTC-ZL-qvw" firstAttribute="width" secondItem="E4M-2L-Fby" secondAttribute="width" id="9Yn-t9-h2I"/>
+                            <constraint firstItem="bTC-ZL-qvw" firstAttribute="height" secondItem="E4M-2L-Fby" secondAttribute="height" id="Anu-eX-aOR"/>
                             <constraint firstItem="bTC-ZL-qvw" firstAttribute="centerX" secondItem="E4M-2L-Fby" secondAttribute="centerX" id="MDG-Qu-tr9"/>
                             <constraint firstItem="f67-Dl-GhK" firstAttribute="top" secondItem="bTC-ZL-qvw" secondAttribute="bottom" id="PV5-fZ-z8k"/>
-                            <constraint firstItem="bTC-ZL-qvw" firstAttribute="top" secondItem="o58-uw-318" secondAttribute="bottom" id="pTa-Nb-nrs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Message" id="uJv-PZ-r4j"/>
+                    <connections>
+                        <outlet property="tableView" destination="bTC-ZL-qvw" id="sI3-Dm-wOK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Nd-MK-FLU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -391,7 +415,7 @@
         <!--Mine-->
         <scene sceneID="k0V-1K-23x">
             <objects>
-                <viewController id="2md-zs-6Vx" customClass="MineViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="myViewController" id="2md-zs-6Vx" customClass="ProfileViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oPz-MF-VxC"/>
                         <viewControllerLayoutGuide type="bottom" id="g5Y-ou-fmW"/>
@@ -399,32 +423,13 @@
                     <view key="view" contentMode="scaleToFill" id="tis-Ei-XlF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Qgi-hR-7uZ" customClass="MSTableView">
-                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="2md-zs-6Vx" id="NjN-RO-Hyv"/>
-                                    <outlet property="delegate" destination="2md-zs-6Vx" id="pxO-8b-xhw"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="Qgi-hR-7uZ" firstAttribute="centerX" secondItem="tis-Ei-XlF" secondAttribute="centerX" id="XrE-7l-MXK"/>
-                            <constraint firstItem="Qgi-hR-7uZ" firstAttribute="top" secondItem="oPz-MF-VxC" secondAttribute="bottom" id="cMS-ad-Nso"/>
-                            <constraint firstItem="Qgi-hR-7uZ" firstAttribute="width" secondItem="tis-Ei-XlF" secondAttribute="width" id="sUa-Cu-9KD"/>
-                            <constraint firstItem="g5Y-ou-fmW" firstAttribute="top" secondItem="Qgi-hR-7uZ" secondAttribute="bottom" id="yec-fe-FVO"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Mine" id="ZbD-zQ-PBx"/>
-                    <connections>
-                        <outlet property="tableView" destination="Qgi-hR-7uZ" id="Yi3-nl-70o"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qHl-Mx-HVz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="352" y="2153"/>
+            <point key="canvasLocation" x="444" y="2153"/>
         </scene>
         <!--GIF-->
         <scene sceneID="hEo-Ro-AsU">

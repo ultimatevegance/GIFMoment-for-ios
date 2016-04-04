@@ -7,8 +7,9 @@
 //
 
 #import "HomeViewController.h"
-
+#import "MSTableView.h"
 @interface HomeViewController ()
+@property (strong, nonatomic) IBOutlet MSTableView *tableView;
 
 @end
 
@@ -17,8 +18,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self _setupNaviItem];
-
+    [self _setHeaderView];
 }
+- (void)_setHeaderView{
+    UIView *headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 300, 0.5)];
+    headerView.backgroundColor = [UIColor clearColor];
+    self.tableView.tableHeaderView = headerView;
+    
+    
+}
+
 - (void)_setupNaviItem{
     UIButton *locationButton = [UIButton buttonWithType:UIButtonTypeCustom];
     locationButton.frame = CGRectMake(0, 0, 20, 20);
@@ -69,14 +78,14 @@
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     
-    return 1;
+    return 20;
     
     
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 10;
+    return 1;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{

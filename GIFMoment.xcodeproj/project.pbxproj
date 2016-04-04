@@ -57,7 +57,6 @@
 		728004D71C9D7FBD00057C0A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728004D61C9D7FBD00057C0A /* HomeViewController.m */; };
 		728004DA1C9D7FCD00057C0A /* ExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728004D91C9D7FCD00057C0A /* ExploreViewController.m */; };
 		728004DD1C9D7FF000057C0A /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728004DC1C9D7FF000057C0A /* MessageViewController.m */; };
-		728004E01C9D800100057C0A /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728004DF1C9D800100057C0A /* MineViewController.m */; };
 		728004E61C9D821000057C0A /* tabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 728004E31C9D821000057C0A /* tabbar.png */; };
 		728004E71C9D821000057C0A /* tabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 728004E41C9D821000057C0A /* tabbar@2x.png */; };
 		728004EA1C9D887400057C0A /* mine.png in Resources */ = {isa = PBXBuildFile; fileRef = 728004E81C9D887400057C0A /* mine.png */; };
@@ -66,6 +65,13 @@
 		72F565CE1CA17E260015E029 /* NSGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F565CD1CA17E260015E029 /* NSGIF.m */; };
 		72F565D11CA184330015E029 /* ModelGIFCapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F565D01CA184330015E029 /* ModelGIFCapViewController.m */; };
 		72F565D31CA18D810015E029 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72F565D21CA18D810015E029 /* MobileCoreServices.framework */; };
+		72FE4E241CB24EA40012BEFF /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE4E231CB24EA40012BEFF /* ProfileViewController.m */; };
+		72FE4E311CB24F660012BEFF /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE4E281CB24F660012BEFF /* UIImage+ImageEffects.m */; };
+		72FE4E321CB24F660012BEFF /* UIImageView+LBBlurredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE4E2A1CB24F660012BEFF /* UIImageView+LBBlurredImage.m */; };
+		72FE4E331CB24F660012BEFF /* MGSpotyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE4E2C1CB24F660012BEFF /* MGSpotyView.m */; };
+		72FE4E341CB24F660012BEFF /* MGSpotyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE4E2E1CB24F660012BEFF /* MGSpotyViewController.m */; };
+		72FE4E3A1CB24FBC0012BEFF /* MGViewControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE4E371CB24FBC0012BEFF /* MGViewControllerDataSource.m */; };
+		72FE4E3B1CB24FBC0012BEFF /* MGViewControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE4E391CB24FBC0012BEFF /* MGViewControllerDelegate.m */; };
 		8DCF6B021CAD716C00F6E83F /* brand.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DCF6B011CAD716C00F6E83F /* brand.png */; };
 /* End PBXBuildFile section */
 
@@ -158,8 +164,6 @@
 		728004D91C9D7FCD00057C0A /* ExploreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreViewController.m; sourceTree = "<group>"; };
 		728004DB1C9D7FF000057C0A /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
 		728004DC1C9D7FF000057C0A /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
-		728004DE1C9D800100057C0A /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
-		728004DF1C9D800100057C0A /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		728004E31C9D821000057C0A /* tabbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar.png; sourceTree = "<group>"; };
 		728004E41C9D821000057C0A /* tabbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar@2x.png"; sourceTree = "<group>"; };
 		728004E81C9D887400057C0A /* mine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mine.png; sourceTree = "<group>"; };
@@ -171,6 +175,22 @@
 		72F565CF1CA184330015E029 /* ModelGIFCapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelGIFCapViewController.h; sourceTree = "<group>"; };
 		72F565D01CA184330015E029 /* ModelGIFCapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelGIFCapViewController.m; sourceTree = "<group>"; };
 		72F565D21CA18D810015E029 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		72FE4E221CB24EA40012BEFF /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		72FE4E231CB24EA40012BEFF /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		72FE4E271CB24F660012BEFF /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		72FE4E281CB24F660012BEFF /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		72FE4E291CB24F660012BEFF /* UIImageView+LBBlurredImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LBBlurredImage.h"; sourceTree = "<group>"; };
+		72FE4E2A1CB24F660012BEFF /* UIImageView+LBBlurredImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LBBlurredImage.m"; sourceTree = "<group>"; };
+		72FE4E2B1CB24F660012BEFF /* MGSpotyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSpotyView.h; sourceTree = "<group>"; };
+		72FE4E2C1CB24F660012BEFF /* MGSpotyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSpotyView.m; sourceTree = "<group>"; };
+		72FE4E2D1CB24F660012BEFF /* MGSpotyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSpotyViewController.h; sourceTree = "<group>"; };
+		72FE4E2E1CB24F660012BEFF /* MGSpotyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSpotyViewController.m; sourceTree = "<group>"; };
+		72FE4E2F1CB24F660012BEFF /* MGSpotyViewControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSpotyViewControllerDataSource.h; sourceTree = "<group>"; };
+		72FE4E301CB24F660012BEFF /* MGSpotyViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSpotyViewControllerDelegate.h; sourceTree = "<group>"; };
+		72FE4E361CB24FBC0012BEFF /* MGViewControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGViewControllerDataSource.h; sourceTree = "<group>"; };
+		72FE4E371CB24FBC0012BEFF /* MGViewControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGViewControllerDataSource.m; sourceTree = "<group>"; };
+		72FE4E381CB24FBC0012BEFF /* MGViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGViewControllerDelegate.h; sourceTree = "<group>"; };
+		72FE4E391CB24FBC0012BEFF /* MGViewControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGViewControllerDelegate.m; sourceTree = "<group>"; };
 		8DCF6B011CAD716C00F6E83F /* brand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brand.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -297,6 +317,7 @@
 		728004C01C9D7E8000057C0A /* 3rdLi */ = {
 			isa = PBXGroup;
 			children = (
+				72FE4E251CB24F660012BEFF /* MGSpotyViewController */,
 				72495E3C1CA1B9AB0044154B /* UIImage+animatedGIF */,
 				72F565CB1CA17E260015E029 /* NSGIF */,
 			);
@@ -478,10 +499,11 @@
 		728004D41C9D7F3600057C0A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				728004DE1C9D800100057C0A /* MineViewController.h */,
-				728004DF1C9D800100057C0A /* MineViewController.m */,
+				72FE4E351CB24F970012BEFF /* datasource and Delegate */,
 				7230A3B11CB1A32A0068A037 /* SettingTableViewController.h */,
 				7230A3B21CB1A32A0068A037 /* SettingTableViewController.m */,
+				72FE4E221CB24EA40012BEFF /* ProfileViewController.h */,
+				72FE4E231CB24EA40012BEFF /* ProfileViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -530,6 +552,42 @@
 				72F565CD1CA17E260015E029 /* NSGIF.m */,
 			);
 			path = NSGIF;
+			sourceTree = "<group>";
+		};
+		72FE4E251CB24F660012BEFF /* MGSpotyViewController */ = {
+			isa = PBXGroup;
+			children = (
+				72FE4E261CB24F660012BEFF /* ImageEffects */,
+				72FE4E2B1CB24F660012BEFF /* MGSpotyView.h */,
+				72FE4E2C1CB24F660012BEFF /* MGSpotyView.m */,
+				72FE4E2D1CB24F660012BEFF /* MGSpotyViewController.h */,
+				72FE4E2E1CB24F660012BEFF /* MGSpotyViewController.m */,
+				72FE4E2F1CB24F660012BEFF /* MGSpotyViewControllerDataSource.h */,
+				72FE4E301CB24F660012BEFF /* MGSpotyViewControllerDelegate.h */,
+			);
+			path = MGSpotyViewController;
+			sourceTree = "<group>";
+		};
+		72FE4E261CB24F660012BEFF /* ImageEffects */ = {
+			isa = PBXGroup;
+			children = (
+				72FE4E271CB24F660012BEFF /* UIImage+ImageEffects.h */,
+				72FE4E281CB24F660012BEFF /* UIImage+ImageEffects.m */,
+				72FE4E291CB24F660012BEFF /* UIImageView+LBBlurredImage.h */,
+				72FE4E2A1CB24F660012BEFF /* UIImageView+LBBlurredImage.m */,
+			);
+			path = ImageEffects;
+			sourceTree = "<group>";
+		};
+		72FE4E351CB24F970012BEFF /* datasource and Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				72FE4E361CB24FBC0012BEFF /* MGViewControllerDataSource.h */,
+				72FE4E371CB24FBC0012BEFF /* MGViewControllerDataSource.m */,
+				72FE4E381CB24FBC0012BEFF /* MGViewControllerDelegate.h */,
+				72FE4E391CB24FBC0012BEFF /* MGViewControllerDelegate.m */,
+			);
+			name = "datasource and Delegate";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -698,26 +756,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72FE4E241CB24EA40012BEFF /* ProfileViewController.m in Sources */,
 				7280048B1C9D76C900057C0A /* AppDelegate.m in Sources */,
 				72495E3F1CA1B9AB0044154B /* UIImage+animatedGIF.m in Sources */,
 				7230A3B61CB1A7760068A037 /* SearchViewController.m in Sources */,
+				72FE4E311CB24F660012BEFF /* UIImage+ImageEffects.m in Sources */,
 				72F565CE1CA17E260015E029 /* NSGIF.m in Sources */,
 				728004BB1C9D7CBA00057C0A /* MTTabController.m in Sources */,
+				72FE4E341CB24F660012BEFF /* MGSpotyViewController.m in Sources */,
 				728004BE1C9D7E4600057C0A /* MTNavController.m in Sources */,
+				72FE4E3A1CB24FBC0012BEFF /* MGViewControllerDataSource.m in Sources */,
 				7230A3911CB177A40068A037 /* MSTableViewCell.m in Sources */,
 				72F565D11CA184330015E029 /* ModelGIFCapViewController.m in Sources */,
 				728004D71C9D7FBD00057C0A /* HomeViewController.m in Sources */,
 				7230A38A1CB174410068A037 /* MSTableView.m in Sources */,
 				7230A3961CB17CB20068A037 /* MSStatus.m in Sources */,
+				72FE4E3B1CB24FBC0012BEFF /* MGViewControllerDelegate.m in Sources */,
 				728004DA1C9D7FCD00057C0A /* ExploreViewController.m in Sources */,
 				7230A39E1CB18A8D0068A037 /* MessageModel.m in Sources */,
 				72F565CA1CA172C70015E029 /* GIFViewController.m in Sources */,
 				7230A3B31CB1A32A0068A037 /* SettingTableViewController.m in Sources */,
 				7222CEEE1CA2D831008ECE97 /* BaseViewController.m in Sources */,
 				7230A39B1CB18A370068A037 /* MessageCell.m in Sources */,
+				72FE4E321CB24F660012BEFF /* UIImageView+LBBlurredImage.m in Sources */,
 				728004881C9D76C900057C0A /* main.m in Sources */,
 				728004DD1C9D7FF000057C0A /* MessageViewController.m in Sources */,
-				728004E01C9D800100057C0A /* MineViewController.m in Sources */,
+				72FE4E331CB24F660012BEFF /* MGSpotyView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

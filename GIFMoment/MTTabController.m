@@ -7,7 +7,7 @@
 //
 
 #import "MTTabController.h"
-
+#import "ProfileViewController.h"
 @interface MTTabController ()
 
 @end
@@ -19,6 +19,9 @@
     // Do any additional setup after loading the view.
     self.tabBar.tintColor = [UIColor whiteColor];
     self.tabBar.backgroundColor = [UIColor grayColor];
+    
+//    ProfileViewController *myViewController = [[ProfileViewController alloc  ]initWithMainImage:@"avatar"];
+    
     
 }
 

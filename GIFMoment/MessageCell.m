@@ -13,7 +13,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
-    self.userAvatarImageView.layer.cornerRadius = 10.0;
+    self.userAvatarImageView.layer.cornerRadius = _userAvatarImageView.bounds.size.width * 0.5;;
     self.userAvatarImageView.clipsToBounds = YES;
      [self.userAvatarImageView setContentMode:UIViewContentModeScaleAspectFit];
        [self.userAvatarImageView setImage:[UIImage imageNamed:@"avatar"]];

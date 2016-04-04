@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
-@interface MineViewController :  BaseViewController<UITableViewDelegate,UITableViewDataSource>
+@interface MineViewController :  BaseViewController
 
 @end

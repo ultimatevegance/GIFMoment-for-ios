@@ -8,17 +8,43 @@
 
 #import "MineViewController.h"
 #import "SettingTableViewController.h"
-@class MSTableView;
+#import "MSTableView.h"
 @interface MineViewController ()
 @property (strong, nonatomic) IBOutlet MSTableView *tableView;
 @end
 
 @implementation MineViewController
 
+- (void)awakeFromNib{
+    
+    
+    
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self _setupNaviItem];
+//    [self _setHeaderView];
+
 }
+//- (void)_setHeaderView{
+//    UIView *headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 300)];
+//    headerView.backgroundColor = [UIColor blackColor];
+//    UIImageView *userAvatarImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 150, 150)];
+//    userAvatarImageView.backgroundColor = [UIColor clearColor];
+//    userAvatarImageView.center = headerView.center;
+//    
+//    [userAvatarImageView setContentMode:UIViewContentModeScaleAspectFit];
+//    [userAvatarImageView.layer setCornerRadius: userAvatarImageView.bounds.size.width * 0.5];
+//    
+//    userAvatarImageView.clipsToBounds = YES;
+//    [userAvatarImageView setImage:[UIImage imageNamed:@"avatar"]];
+//
+//    [headerView addSubview:userAvatarImageView];
+//    self.tableView.tableHeaderView = headerView;
+//    
+//    
+//}
 -(void)_setupNaviItem{
     UIButton *settingButton = [UIButton buttonWithType:UIButtonTypeCustom];
     settingButton.frame = CGRectMake(0, 0, 20, 20);
@@ -50,30 +76,30 @@
     // Pass the selected object to the new view controller.
 }
 */
-#pragma mark -UITableView Delegate
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    return 300;
-}
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    
-    return 1;
-    
-    
-}
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    
-    return 10;
-}
-
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSString *identifier = @"MSCell";
-    
-    UITableViewCell *cell =  [tableView dequeueReusableCellWithIdentifier:identifier];
-    if (cell == nil) {
-        cell = [[[NSBundle mainBundle]loadNibNamed:@"MSCell" owner:nil options:nil]lastObject ];
-    }
-    
-    return cell;
-}
+//#pragma mark -UITableView Delegate
+//-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+//    
+//    return 300;
+//}
+//-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+//    
+//    return 20;
+//    
+//    
+//}
+//-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+//    
+//    return 1;
+//}
+//
+//-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+//    NSString *identifier = @"MSCell";
+//    
+//    UITableViewCell *cell =  [tableView dequeueReusableCellWithIdentifier:identifier];
+//    if (cell == nil) {
+//        cell = [[[NSBundle mainBundle]loadNibNamed:@"MSCell" owner:nil options:nil]lastObject ];
+//    }
+//    
+//    return cell;
+//}
 @end
