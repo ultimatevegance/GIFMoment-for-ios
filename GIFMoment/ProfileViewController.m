@@ -57,7 +57,7 @@
 
 }
 - (UIView *)myOverView{
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.overView.frame.size.width, 300)];
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.overView.frame.size.width, 200)];
     [self _addElementOnView:view];
     
     return view;

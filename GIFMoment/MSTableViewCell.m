@@ -20,6 +20,7 @@
     
     self.userAvatarImageView.layer.masksToBounds = YES;
     [self.userAvatarImageView setImage:[UIImage imageNamed:@"avatar"]];
+    self.backgroundColor = [UIColor darkGrayColor];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

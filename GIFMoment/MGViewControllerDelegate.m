@@ -31,7 +31,7 @@
           titleForHeaderInSection:(NSInteger)section
 {
     
-    return @"Post Liked By Monster Sucker";
+    return @"       ❤️ Post Liked By Monster Sucker❤️";
 }
 
 - (void)spotyViewController:(MGSpotyViewController *)spotyViewController scrollViewDidScroll:(UIScrollView *)scrollView

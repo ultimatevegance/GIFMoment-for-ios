@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -15,10 +15,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="352" height="271.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sampleImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="UfJ-T8-GXj">
-                        <rect key="frame" x="0.0" y="54" width="352" height="166"/>
-                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the GIFMoment of My City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tmy-rK-4Xn">
                         <rect key="frame" x="0.0" y="242" width="352" height="22"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -36,9 +32,9 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 hours ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XX0-8M-O4f">
-                        <rect key="frame" x="254" y="16" width="63" height="21"/>
+                        <rect key="frame" x="227" y="16" width="90" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="63" id="POF-jM-gdU"/>
+                            <constraint firstAttribute="width" constant="90" id="POF-jM-gdU"/>
                             <constraint firstAttribute="height" constant="21" id="Q9n-ad-gRy"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
@@ -77,6 +73,10 @@
                             <constraint firstAttribute="height" constant="45" id="hc7-a5-rfH"/>
                         </constraints>
                     </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="sampleImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="UfJ-T8-GXj">
+                        <rect key="frame" x="0.0" y="53" width="352" height="166"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="zVr-5B-agK" firstAttribute="leading" secondItem="f3u-0H-oIl" secondAttribute="trailing" constant="8" id="1hx-nN-6KS"/>
@@ -89,10 +89,8 @@
                     <constraint firstAttribute="bottomMargin" secondItem="UfJ-T8-GXj" secondAttribute="bottom" constant="43.5" id="LTy-r3-8TM"/>
                     <constraint firstItem="XX0-8M-O4f" firstAttribute="top" secondItem="Usg-eK-dV4" secondAttribute="topMargin" constant="8" id="Mhu-so-pOy"/>
                     <constraint firstAttribute="topMargin" secondItem="f3u-0H-oIl" secondAttribute="top" id="Pv0-sl-NN8"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="UfJ-T8-GXj" secondAttribute="trailing" constant="-8" id="ShT-v8-S1S"/>
                     <constraint firstItem="Tmy-rK-4Xn" firstAttribute="width" secondItem="Usg-eK-dV4" secondAttribute="width" id="Z7I-7M-XvQ"/>
                     <constraint firstItem="UfJ-T8-GXj" firstAttribute="top" secondItem="zVr-5B-agK" secondAttribute="bottom" constant="1" id="Zsd-dd-xKd"/>
-                    <constraint firstItem="UfJ-T8-GXj" firstAttribute="top" secondItem="Usg-eK-dV4" secondAttribute="topMargin" constant="45" id="ehG-hX-DeY"/>
                     <constraint firstItem="UfJ-T8-GXj" firstAttribute="centerX" secondItem="Usg-eK-dV4" secondAttribute="centerX" id="ixn-gV-XTm"/>
                     <constraint firstItem="ZzC-hY-LGW" firstAttribute="leading" secondItem="XX0-8M-O4f" secondAttribute="trailing" constant="2" id="jCg-9M-zkx"/>
                     <constraint firstAttribute="leadingMargin" secondItem="f3u-0H-oIl" secondAttribute="leading" id="oQ6-Ps-rG6"/>
@@ -102,12 +100,6 @@
                     <constraint firstItem="fhd-u1-MSO" firstAttribute="top" secondItem="gId-3K-8a9" secondAttribute="bottom" constant="3" id="yPm-MO-7sd"/>
                     <constraint firstItem="Tmy-rK-4Xn" firstAttribute="top" secondItem="UfJ-T8-GXj" secondAttribute="bottom" constant="22" id="ySH-nX-XwW"/>
                 </constraints>
-                <variation key="default">
-                    <mask key="constraints">
-                        <exclude reference="ShT-v8-S1S"/>
-                        <exclude reference="ehG-hX-DeY"/>
-                    </mask>
-                </variation>
             </tableViewCellContentView>
             <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
             <connections>
