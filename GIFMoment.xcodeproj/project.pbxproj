@@ -45,6 +45,7 @@
 		7230A3BE1CB1AA7A0068A037 /* StreamLayout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7230A3BA1CB1AA7A0068A037 /* StreamLayout@2x.png */; };
 		72495E3F1CA1B9AB0044154B /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 72495E3E1CA1B9AB0044154B /* UIImage+animatedGIF.m */; };
 		72495E411CA1B9E10044154B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72495E401CA1B9E10044154B /* ImageIO.framework */; };
+		7258B4C61CB3F55900B01BDF /* MineNaviCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7258B4C51CB3F55900B01BDF /* MineNaviCtrl.m */; };
 		728004881C9D76C900057C0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 728004871C9D76C900057C0A /* main.m */; };
 		7280048B1C9D76C900057C0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7280048A1C9D76C900057C0A /* AppDelegate.m */; };
 		728004911C9D76C900057C0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7280048F1C9D76C900057C0A /* Main.storyboard */; };
@@ -53,7 +54,6 @@
 		728004A11C9D76C900057C0A /* GIFMomentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 728004A01C9D76C900057C0A /* GIFMomentTests.m */; };
 		728004AC1C9D76C900057C0A /* GIFMomentUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 728004AB1C9D76C900057C0A /* GIFMomentUITests.m */; };
 		728004BB1C9D7CBA00057C0A /* MTTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728004BA1C9D7CBA00057C0A /* MTTabController.m */; };
-		728004BE1C9D7E4600057C0A /* MTNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728004BD1C9D7E4600057C0A /* MTNavController.m */; };
 		728004D71C9D7FBD00057C0A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728004D61C9D7FBD00057C0A /* HomeViewController.m */; };
 		728004DA1C9D7FCD00057C0A /* ExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728004D91C9D7FCD00057C0A /* ExploreViewController.m */; };
 		728004DD1C9D7FF000057C0A /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728004DC1C9D7FF000057C0A /* MessageViewController.m */; };
@@ -140,6 +140,8 @@
 		72495E3D1CA1B9AB0044154B /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
 		72495E3E1CA1B9AB0044154B /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
 		72495E401CA1B9E10044154B /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		7258B4C41CB3F55900B01BDF /* MineNaviCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineNaviCtrl.h; sourceTree = "<group>"; };
+		7258B4C51CB3F55900B01BDF /* MineNaviCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineNaviCtrl.m; sourceTree = "<group>"; };
 		728004831C9D76C900057C0A /* GIFMoment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIFMoment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		728004871C9D76C900057C0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		728004891C9D76C900057C0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -156,8 +158,6 @@
 		728004AD1C9D76C900057C0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		728004B91C9D7CBA00057C0A /* MTTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTabController.h; sourceTree = "<group>"; };
 		728004BA1C9D7CBA00057C0A /* MTTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTabController.m; sourceTree = "<group>"; };
-		728004BC1C9D7E4600057C0A /* MTNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTNavController.h; sourceTree = "<group>"; };
-		728004BD1C9D7E4600057C0A /* MTNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTNavController.m; sourceTree = "<group>"; };
 		728004D51C9D7FBD00057C0A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		728004D61C9D7FBD00057C0A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		728004D81C9D7FCD00057C0A /* ExploreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExploreViewController.h; sourceTree = "<group>"; };
@@ -230,6 +230,19 @@
 			path = "UIImage+animatedGIF";
 			sourceTree = "<group>";
 		};
+		7258B4C31CB3F4F800B01BDF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7222CEEC1CA2D831008ECE97 /* BaseViewController.h */,
+				7222CEED1CA2D831008ECE97 /* BaseViewController.m */,
+				728004B91C9D7CBA00057C0A /* MTTabController.h */,
+				728004BA1C9D7CBA00057C0A /* MTTabController.m */,
+				7258B4C41CB3F55900B01BDF /* MineNaviCtrl.h */,
+				7258B4C51CB3F55900B01BDF /* MineNaviCtrl.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
 		7280047A1C9D76C900057C0A = {
 			isa = PBXGroup;
 			children = (
@@ -272,14 +285,8 @@
 				728004E11C9D821000057C0A /* IMAGES */,
 				728004C01C9D7E8000057C0A /* 3rdLi */,
 				728004921C9D76C900057C0A /* Assets.xcassets */,
-				728004B91C9D7CBA00057C0A /* MTTabController.h */,
-				728004BA1C9D7CBA00057C0A /* MTTabController.m */,
 				8DCF6B011CAD716C00F6E83F /* brand.png */,
-				7222CEEC1CA2D831008ECE97 /* BaseViewController.h */,
-				7222CEED1CA2D831008ECE97 /* BaseViewController.m */,
 				728004871C9D76C900057C0A /* main.m */,
-				728004BC1C9D7E4600057C0A /* MTNavController.h */,
-				728004BD1C9D7E4600057C0A /* MTNavController.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -305,6 +312,7 @@
 		728004BF1C9D7E6700057C0A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7258B4C31CB3F4F800B01BDF /* Base */,
 				728004C51C9D7EAF00057C0A /* Home */,
 				728004C41C9D7EAB00057C0A /* Explore */,
 				728004C31C9D7EA700057C0A /* GIF */,
@@ -764,7 +772,6 @@
 				72F565CE1CA17E260015E029 /* NSGIF.m in Sources */,
 				728004BB1C9D7CBA00057C0A /* MTTabController.m in Sources */,
 				72FE4E341CB24F660012BEFF /* MGSpotyViewController.m in Sources */,
-				728004BE1C9D7E4600057C0A /* MTNavController.m in Sources */,
 				72FE4E3A1CB24FBC0012BEFF /* MGViewControllerDataSource.m in Sources */,
 				7230A3911CB177A40068A037 /* MSTableViewCell.m in Sources */,
 				72F565D11CA184330015E029 /* ModelGIFCapViewController.m in Sources */,
@@ -778,6 +785,7 @@
 				7230A3B31CB1A32A0068A037 /* SettingTableViewController.m in Sources */,
 				7222CEEE1CA2D831008ECE97 /* BaseViewController.m in Sources */,
 				7230A39B1CB18A370068A037 /* MessageCell.m in Sources */,
+				7258B4C61CB3F55900B01BDF /* MineNaviCtrl.m in Sources */,
 				72FE4E321CB24F660012BEFF /* UIImageView+LBBlurredImage.m in Sources */,
 				728004881C9D76C900057C0A /* main.m in Sources */,
 				728004DD1C9D7FF000057C0A /* MessageViewController.m in Sources */,

@@ -47,7 +47,7 @@
         <!--ExploreNav-->
         <scene sceneID="z0Z-oe-fn1">
             <objects>
-                <navigationController title="ExploreNav" id="MSx-Sj-lpy" customClass="MTNavController" sceneMemberID="viewController">
+                <navigationController title="ExploreNav" id="MSx-Sj-lpy" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Explore" image="explore.png" id="Qet-If-GoF"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qZp-7n-VPQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -73,9 +73,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="24" sectionHeaderHeight="2" sectionFooterHeight="2" translatesAutoresizingMaskIntoConstraints="NO" id="Nrb-HW-H8Q" customClass="MSTableView">
+                            <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" allowsSelection="NO" rowHeight="24" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Nrb-HW-H8Q" customClass="MSTableView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="separatorColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Dns-qI-VNS" id="990-Yy-gBa"/>
                                     <outlet property="delegate" destination="Dns-qI-VNS" id="eAg-Ok-CwG"/>
@@ -102,7 +104,7 @@
         <!--HomeNav-->
         <scene sceneID="UfX-Fu-V94">
             <objects>
-                <navigationController title="HomeNav" id="Sbl-mF-fPe" customClass="MTNavController" sceneMemberID="viewController">
+                <navigationController title="HomeNav" id="Sbl-mF-fPe" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="home.png" id="6Ik-9i-9ZT"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="E44-lz-4I8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -119,7 +121,7 @@
         <!--MessageNav-->
         <scene sceneID="WOr-1Q-dBJ">
             <objects>
-                <navigationController title="MessageNav" id="LcU-Cn-ekh" customClass="MTNavController" sceneMemberID="viewController">
+                <navigationController title="MessageNav" id="LcU-Cn-ekh" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Message" image="message.png" id="NP6-dV-acC"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EMs-E6-U1x">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -136,15 +138,12 @@
         <!--MineNav-->
         <scene sceneID="dnv-cu-wvb">
             <objects>
-                <navigationController title="MineNav" id="3n1-4X-P4s" customClass="MTNavController" sceneMemberID="viewController">
+                <navigationController title="MineNav" id="3n1-4X-P4s" customClass="MineNaviCtrl" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Mine" image="mine.png" id="iww-p7-ALE"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="I72-Jb-Wxt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="2md-zs-6Vx" kind="relationship" relationship="rootViewController" id="Qlj-h8-XR0"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M2A-Iw-Vos" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -310,7 +309,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="2" sectionFooterHeight="2" translatesAutoresizingMaskIntoConstraints="NO" id="CKn-QR-eqo" customClass="MSTableView">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="CKn-QR-eqo" customClass="MSTableView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
@@ -412,25 +411,6 @@
             </objects>
             <point key="canvasLocation" x="352" y="1335"/>
         </scene>
-        <!--Mine-->
-        <scene sceneID="k0V-1K-23x">
-            <objects>
-                <viewController storyboardIdentifier="myViewController" id="2md-zs-6Vx" customClass="ProfileViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="oPz-MF-VxC"/>
-                        <viewControllerLayoutGuide type="bottom" id="g5Y-ou-fmW"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tis-Ei-XlF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Mine" id="ZbD-zQ-PBx"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qHl-Mx-HVz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="444" y="2153"/>
-        </scene>
         <!--GIF-->
         <scene sceneID="hEo-Ro-AsU">
             <objects>
@@ -498,7 +478,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aRg-Ij-vOV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="819.73333333333335" y="423.15999999999997"/>
+            <point key="canvasLocation" x="880" y="360"/>
         </scene>
     </scenes>
     <resources>

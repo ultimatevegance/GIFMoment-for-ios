@@ -30,7 +30,8 @@
 - (NSString *)spotyViewController:(MGSpotyViewController *)spotyViewController
           titleForHeaderInSection:(NSInteger)section
 {
-    return @"My Section";
+    
+    return @"Post Liked By Monster Sucker";
 }
 
 - (void)spotyViewController:(MGSpotyViewController *)spotyViewController scrollViewDidScroll:(UIScrollView *)scrollView
