@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import "MSTableView.h"
+#import <AVOSCloud/AVOSCloud.h>
 @interface HomeViewController ()
 @property (strong, nonatomic) IBOutlet MSTableView *tableView;
 
@@ -20,6 +21,11 @@
     [super viewDidLoad];
     [self _setupNaviItem];
     [self _setHeaderView];
+    //test AVOSCloud
+    AVObject *testObject = [AVObject objectWithClassName:@"TestObject"];
+    [testObject setObject:@"bar" forKey:@"foo"];
+    [testObject save];
+    
 }
 - (void)_setHeaderView{
     UIView *headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 300, 0.5)];
