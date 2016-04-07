@@ -13,10 +13,13 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
-    self.userAvatarImageView.layer.cornerRadius = _userAvatarImageView.bounds.size.width * 0.5;;
-    self.userAvatarImageView.clipsToBounds = YES;
-     [self.userAvatarImageView setContentMode:UIViewContentModeScaleAspectFit];
-       [self.userAvatarImageView setImage:[UIImage imageNamed:@"avatar"]];
+    [self.userAvatarImageView setContentMode:UIViewContentModeScaleAspectFill];
+    [_userAvatarImageView.layer setCornerRadius: _userAvatarImageView.bounds.size.width * 0.5];
+    self.userAvatarImageView.layer.borderColor = [UIColor grayColor].CGColor;
+    self.userAvatarImageView.layer.borderWidth = 1;
+    
+    self.userAvatarImageView.layer.masksToBounds = YES;
+    [self.userAvatarImageView setImage:[UIImage imageNamed:@"avatar"]];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

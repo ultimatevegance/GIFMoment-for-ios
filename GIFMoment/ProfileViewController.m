@@ -10,7 +10,7 @@
 #import "MGViewControllerDelegate.h"
 #import "MGViewControllerDataSource.h"
 #import "SettingTableViewController.h"
-
+#import "MineHeaderView.h"
 @interface ProfileViewController ()
 
 @end
@@ -19,6 +19,7 @@
 {
         MGViewControllerDelegate *myDelegate;
         MGViewControllerDataSource *myDataSource;
+        MineHeaderView *headerView ;
     }
 
 - (instancetype)initWithMainImage:(UIImage *)image{
@@ -52,20 +53,21 @@
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
     self.title = @"Mine";
-    
-   
+    [self setOverView:self.myOverView];
 
 }
 - (UIView *)myOverView{
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.overView.frame.size.width, 200)];
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.overView.frame.size.width, 300)];
     [self _addElementOnView:view];
     
     return view;
 }
 - (void)_addElementOnView : (UIView* )view{
+   NSArray *  nibView = [[NSBundle mainBundle]loadNibNamed:@"MineHeaderView" owner:self options:nil];
+    headerView = [nibView objectAtIndex:0];
+    headerView.frame = CGRectMake(0, 0, self.view.frame.size.width, 200);
     
-    
-    
+    [view addSubview:headerView];
     
 }
 - (void)_setupNaviItem{
