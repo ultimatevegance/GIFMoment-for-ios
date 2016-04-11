@@ -15,7 +15,7 @@
     // Initialization code
     [self.userAvatarImageView setContentMode:UIViewContentModeScaleAspectFill];
     [_userAvatarImageView.layer setCornerRadius: _userAvatarImageView.bounds.size.width * 0.5];
-    self.userAvatarImageView.layer.borderColor = [UIColor grayColor].CGColor;
+    self.userAvatarImageView.layer.borderColor = [UIColor whiteColor].CGColor;
     self.userAvatarImageView.layer.borderWidth = 1;
     
     self.userAvatarImageView.layer.masksToBounds = YES;
