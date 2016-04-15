@@ -17,20 +17,6 @@
                     <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="233  posts 234  followers  4323  following" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ery-oc-Bxb">
-                    <rect key="frame" x="0.0" y="227" width="408" height="16"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                    <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJJ-Ui-mAQ">
-                    <rect key="frame" x="332" y="251" width="46" height="46"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="46" id="HwV-rl-gYP"/>
-                        <constraint firstAttribute="width" constant="46" id="KNG-xH-p20"/>
-                    </constraints>
-                    <state key="normal" backgroundImage="menuBTB.png"/>
-                </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="J4x-Aa-dZP">
                     <rect key="frame" x="144" y="50" width="120" height="120"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -39,32 +25,48 @@
                         <constraint firstAttribute="width" constant="120" id="qCt-zO-xqX"/>
                     </constraints>
                 </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="233  posts 234  followers  4323  following" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ery-oc-Bxb">
+                    <rect key="frame" x="0.0" y="227" width="408" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YfG-ma-PoV">
+                    <rect key="frame" x="85" y="252" width="58" height="19"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="Posts" backgroundImage="Sub.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3V-TL-IS0">
+                    <rect key="frame" x="175" y="251" width="58" height="19"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="Followers" backgroundImage="Sub.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1TJ-tN-sKJ">
+                    <rect key="frame" x="262" y="252" width="58" height="19"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="Following" backgroundImage="Sub.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="ery-oc-Bxb" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="1y7-U9-pBu"/>
                 <constraint firstItem="hWt-w5-OcL" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="DRo-Ab-PmM"/>
                 <constraint firstItem="J4x-Aa-dZP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="Dym-ic-xXq"/>
-                <constraint firstAttribute="bottom" secondItem="eJJ-Ui-mAQ" secondAttribute="bottom" id="V06-PD-eSB"/>
-                <constraint firstAttribute="trailing" secondItem="eJJ-Ui-mAQ" secondAttribute="trailing" id="V45-Ym-Wvn"/>
                 <constraint firstItem="hWt-w5-OcL" firstAttribute="top" secondItem="J4x-Aa-dZP" secondAttribute="bottom" constant="21" id="XD2-5Q-Ub1"/>
                 <constraint firstItem="hWt-w5-OcL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="amV-Z3-PrH"/>
                 <constraint firstItem="ery-oc-Bxb" firstAttribute="top" secondItem="hWt-w5-OcL" secondAttribute="bottom" constant="15" id="b4h-n4-HCT"/>
                 <constraint firstItem="ery-oc-Bxb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="k5p-rA-UPY"/>
-                <constraint firstAttribute="trailing" secondItem="eJJ-Ui-mAQ" secondAttribute="trailing" constant="30" id="qP8-34-gHG"/>
                 <constraint firstItem="J4x-Aa-dZP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="xsX-Tf-eA4"/>
-                <constraint firstItem="eJJ-Ui-mAQ" firstAttribute="top" secondItem="ery-oc-Bxb" secondAttribute="bottom" constant="8" id="z7w-96-80n"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <variation key="default">
-                <mask key="constraints">
-                    <exclude reference="V06-PD-eSB"/>
-                    <exclude reference="V45-Ym-Wvn"/>
-                </mask>
-            </variation>
             <connections>
-                <outlet property="menuButton" destination="eJJ-Ui-mAQ" id="0bV-cr-G7w"/>
                 <outlet property="userAvatarImageView" destination="J4x-Aa-dZP" id="5Lb-D6-IP9"/>
                 <outlet property="userNameLabel" destination="hWt-w5-OcL" id="p6p-UX-Cig"/>
                 <outlet property="userStatusInfoLabel" destination="ery-oc-Bxb" id="eWV-uY-dUe"/>
@@ -73,7 +75,7 @@
         </view>
     </objects>
     <resources>
+        <image name="Sub.png" width="99" height="31"/>
         <image name="avatar" width="1608" height="1234"/>
-        <image name="menuBTB.png" width="80" height="80"/>
     </resources>
 </document>
