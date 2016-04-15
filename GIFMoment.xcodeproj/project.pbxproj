@@ -51,7 +51,6 @@
 		7280048B1C9D76C900057C0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7280048A1C9D76C900057C0A /* AppDelegate.m */; };
 		728004911C9D76C900057C0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7280048F1C9D76C900057C0A /* Main.storyboard */; };
 		728004931C9D76C900057C0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 728004921C9D76C900057C0A /* Assets.xcassets */; };
-		728004961C9D76C900057C0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 728004941C9D76C900057C0A /* LaunchScreen.storyboard */; };
 		728004A11C9D76C900057C0A /* GIFMomentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 728004A01C9D76C900057C0A /* GIFMomentTests.m */; };
 		728004AC1C9D76C900057C0A /* GIFMomentUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 728004AB1C9D76C900057C0A /* GIFMomentUITests.m */; };
 		728004BB1C9D7CBA00057C0A /* MTTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728004BA1C9D7CBA00057C0A /* MTTabController.m */; };
@@ -119,6 +118,7 @@
 		8D42E66D1CB651BE00B611F8 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D42E6691CB651BE00B611F8 /* 2.png */; };
 		8D42E66E1CB651BE00B611F8 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D42E66A1CB651BE00B611F8 /* 3.png */; };
 		8D42E66F1CB651BE00B611F8 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D42E66B1CB651BE00B611F8 /* 0.png */; };
+		8DA2E87A1CC0DBE000CEF048 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DA2E8791CC0DBE000CEF048 /* LaunchScreen.xib */; };
 		8DCF6B021CAD716C00F6E83F /* brand.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DCF6B011CAD716C00F6E83F /* brand.png */; };
 /* End PBXBuildFile section */
 
@@ -197,7 +197,6 @@
 		7280048A1C9D76C900057C0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		728004901C9D76C900057C0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		728004921C9D76C900057C0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		728004951C9D76C900057C0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		728004971C9D76C900057C0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7280049C1C9D76C900057C0A /* GIFMomentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GIFMomentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		728004A01C9D76C900057C0A /* GIFMomentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIFMomentTests.m; sourceTree = "<group>"; };
@@ -292,6 +291,7 @@
 		8D42E6691CB651BE00B611F8 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		8D42E66A1CB651BE00B611F8 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		8D42E66B1CB651BE00B611F8 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
+		8DA2E8791CC0DBE000CEF048 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		8DCF6B011CAD716C00F6E83F /* brand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brand.png; sourceTree = "<group>"; };
 		A5E1F783ED29A8301DED95A7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -358,19 +358,6 @@
 			path = "UIImage+animatedGIF";
 			sourceTree = "<group>";
 		};
-		7258B4C31CB3F4F800B01BDF /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				7222CEEC1CA2D831008ECE97 /* BaseViewController.h */,
-				7222CEED1CA2D831008ECE97 /* BaseViewController.m */,
-				728004B91C9D7CBA00057C0A /* MTTabController.h */,
-				728004BA1C9D7CBA00057C0A /* MTTabController.m */,
-				7258B4C41CB3F55900B01BDF /* MineNaviCtrl.h */,
-				7258B4C51CB3F55900B01BDF /* MineNaviCtrl.m */,
-			);
-			name = Base;
-			sourceTree = "<group>";
-		};
 		7280047A1C9D76C900057C0A = {
 			isa = PBXGroup;
 			children = (
@@ -396,12 +383,16 @@
 		728004851C9D76C900057C0A /* GIFMoment */ = {
 			isa = PBXGroup;
 			children = (
-				728004BF1C9D7E6700057C0A /* Classes */,
 				728004891C9D76C900057C0A /* AppDelegate.h */,
 				7280048A1C9D76C900057C0A /* AppDelegate.m */,
+				8DA2E86B1CC0D68400CEF048 /* Controllers */,
+				8DA2E86C1CC0D69100CEF048 /* Views */,
+				8DA2E86D1CC0D69D00CEF048 /* Models */,
+				8DA2E86E1CC0D6A600CEF048 /* Helpers */,
 				7280048F1C9D76C900057C0A /* Main.storyboard */,
-				728004941C9D76C900057C0A /* LaunchScreen.storyboard */,
+				8DA2E8791CC0DBE000CEF048 /* LaunchScreen.xib */,
 				728004971C9D76C900057C0A /* Info.plist */,
+				728004921C9D76C900057C0A /* Assets.xcassets */,
 				728004861C9D76C900057C0A /* Supporting Files */,
 			);
 			path = GIFMoment;
@@ -412,7 +403,6 @@
 			children = (
 				728004E11C9D821000057C0A /* IMAGES */,
 				728004C01C9D7E8000057C0A /* 3rdLi */,
-				728004921C9D76C900057C0A /* Assets.xcassets */,
 				8DCF6B011CAD716C00F6E83F /* brand.png */,
 				728004871C9D76C900057C0A /* main.m */,
 			);
@@ -437,20 +427,6 @@
 			path = GIFMomentUITests;
 			sourceTree = "<group>";
 		};
-		728004BF1C9D7E6700057C0A /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				8D42E62E1CB608E300B611F8 /* Start */,
-				7258B4C31CB3F4F800B01BDF /* Base */,
-				728004C51C9D7EAF00057C0A /* Home */,
-				728004C41C9D7EAB00057C0A /* Explore */,
-				728004C31C9D7EA700057C0A /* GIF */,
-				728004C21C9D7EA200057C0A /* Message */,
-				728004C11C9D7E9D00057C0A /* Mine */,
-			);
-			name = Classes;
-			sourceTree = "<group>";
-		};
 		728004C01C9D7E8000057C0A /* 3rdLi */ = {
 			isa = PBXGroup;
 			children = (
@@ -459,197 +435,6 @@
 				72F565CB1CA17E260015E029 /* NSGIF */,
 			);
 			name = 3rdLi;
-			sourceTree = "<group>";
-		};
-		728004C11C9D7E9D00057C0A /* Mine */ = {
-			isa = PBXGroup;
-			children = (
-				728004D41C9D7F3600057C0A /* Controller */,
-				728004D31C9D7F3200057C0A /* Model */,
-				728004D21C9D7F2F00057C0A /* View */,
-			);
-			name = Mine;
-			sourceTree = "<group>";
-		};
-		728004C21C9D7EA200057C0A /* Message */ = {
-			isa = PBXGroup;
-			children = (
-				728004D11C9D7F2A00057C0A /* Controller */,
-				728004D01C9D7F2700057C0A /* Model */,
-				728004CF1C9D7F2400057C0A /* View */,
-			);
-			name = Message;
-			sourceTree = "<group>";
-		};
-		728004C31C9D7EA700057C0A /* GIF */ = {
-			isa = PBXGroup;
-			children = (
-				728004CE1C9D7F1D00057C0A /* Controller */,
-				728004CD1C9D7F1A00057C0A /* Model */,
-				728004CC1C9D7F1700057C0A /* View */,
-			);
-			name = GIF;
-			sourceTree = "<group>";
-		};
-		728004C41C9D7EAB00057C0A /* Explore */ = {
-			isa = PBXGroup;
-			children = (
-				728004CB1C9D7F1200057C0A /* Controller */,
-				728004CA1C9D7F0F00057C0A /* Model */,
-				728004C91C9D7F0C00057C0A /* View */,
-			);
-			name = Explore;
-			sourceTree = "<group>";
-		};
-		728004C51C9D7EAF00057C0A /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				728004C81C9D7F0600057C0A /* Controller */,
-				728004C71C9D7F0100057C0A /* Model */,
-				728004C61C9D7EFA00057C0A /* View */,
-			);
-			name = Home;
-			sourceTree = "<group>";
-		};
-		728004C61C9D7EFA00057C0A /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		728004C71C9D7F0100057C0A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		728004C81C9D7F0600057C0A /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				728004D51C9D7FBD00057C0A /* HomeViewController.h */,
-				728004D61C9D7FBD00057C0A /* HomeViewController.m */,
-			);
-			name = Controller;
-			sourceTree = "<group>";
-		};
-		728004C91C9D7F0C00057C0A /* View */ = {
-			isa = PBXGroup;
-			children = (
-				8D42E6641CB63CF300B611F8 /* TagViewCell.h */,
-				8D42E6651CB63CF300B611F8 /* TagViewCell.m */,
-				8D42E65B1CB6354B00B611F8 /* ExploreHeaderView.h */,
-				8D42E65C1CB6354B00B611F8 /* ExploreHeaderView.m */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		728004CA1C9D7F0F00057C0A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		728004CB1C9D7F1200057C0A /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				728004D81C9D7FCD00057C0A /* ExploreViewController.h */,
-				728004D91C9D7FCD00057C0A /* ExploreViewController.m */,
-				7230A3B41CB1A7760068A037 /* SearchViewController.h */,
-				7230A3B51CB1A7760068A037 /* SearchViewController.m */,
-			);
-			name = Controller;
-			sourceTree = "<group>";
-		};
-		728004CC1C9D7F1700057C0A /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		728004CD1C9D7F1A00057C0A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		728004CE1C9D7F1D00057C0A /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				72F565C81CA172C70015E029 /* GIFViewController.h */,
-				72F565C91CA172C70015E029 /* GIFViewController.m */,
-				72F565CF1CA184330015E029 /* ModelGIFCapViewController.h */,
-				72F565D01CA184330015E029 /* ModelGIFCapViewController.m */,
-			);
-			name = Controller;
-			sourceTree = "<group>";
-		};
-		728004CF1C9D7F2400057C0A /* View */ = {
-			isa = PBXGroup;
-			children = (
-				7230A3991CB18A370068A037 /* MessageCell.h */,
-				7230A39A1CB18A370068A037 /* MessageCell.m */,
-				7230A3971CB187170068A037 /* MessageCell.xib */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		728004D01C9D7F2700057C0A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				7230A39C1CB18A8D0068A037 /* MessageModel.h */,
-				7230A39D1CB18A8D0068A037 /* MessageModel.m */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		728004D11C9D7F2A00057C0A /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				728004DB1C9D7FF000057C0A /* MessageViewController.h */,
-				728004DC1C9D7FF000057C0A /* MessageViewController.m */,
-			);
-			name = Controller;
-			sourceTree = "<group>";
-		};
-		728004D21C9D7F2F00057C0A /* View */ = {
-			isa = PBXGroup;
-			children = (
-				7230A3881CB174410068A037 /* MSTableView.h */,
-				7230A3891CB174410068A037 /* MSTableView.m */,
-				7230A38F1CB177A40068A037 /* MSTableViewCell.h */,
-				7230A3901CB177A40068A037 /* MSTableViewCell.m */,
-				8D42E6421CB60EC100B611F8 /* MineHeaderView.h */,
-				8D42E6431CB60EC100B611F8 /* MineHeaderView.m */,
-				7230A3921CB177CC0068A037 /* MSCell.xib */,
-				8D42E63E1CB60CF300B611F8 /* MineHeaderView.xib */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		728004D31C9D7F3200057C0A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				7230A3941CB17CB20068A037 /* MSStatus.h */,
-				7230A3951CB17CB20068A037 /* MSStatus.m */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		728004D41C9D7F3600057C0A /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				72FE4E351CB24F970012BEFF /* datasource and Delegate */,
-				7230A3B11CB1A32A0068A037 /* SettingTableViewController.h */,
-				7230A3B21CB1A32A0068A037 /* SettingTableViewController.m */,
-				72FE4E221CB24EA40012BEFF /* ProfileViewController.h */,
-				72FE4E231CB24EA40012BEFF /* ProfileViewController.m */,
-			);
-			name = Controller;
 			sourceTree = "<group>";
 		};
 		728004E11C9D821000057C0A /* IMAGES */ = {
@@ -791,6 +576,157 @@
 			name = "New Group";
 			sourceTree = "<group>";
 		};
+		8DA2E86B1CC0D68400CEF048 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7222CEEC1CA2D831008ECE97 /* BaseViewController.h */,
+				7222CEED1CA2D831008ECE97 /* BaseViewController.m */,
+				728004B91C9D7CBA00057C0A /* MTTabController.h */,
+				728004BA1C9D7CBA00057C0A /* MTTabController.m */,
+				7258B4C41CB3F55900B01BDF /* MineNaviCtrl.h */,
+				7258B4C51CB3F55900B01BDF /* MineNaviCtrl.m */,
+				8D42E62E1CB608E300B611F8 /* Start */,
+				8DA2E86F1CC0D6F000CEF048 /* Home */,
+				8DA2E8721CC0D71F00CEF048 /* Message */,
+				8DA2E8701CC0D6FB00CEF048 /* Explore */,
+				8DA2E8731CC0D72B00CEF048 /* Mine */,
+				8DA2E8711CC0D71200CEF048 /* GIF */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8DA2E86C1CC0D69100CEF048 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8DA2E8781CC0D9FC00CEF048 /* Mine */,
+				8DA2E8771CC0D9F300CEF048 /* Message */,
+				8DA2E8761CC0D9E900CEF048 /* GIF */,
+				8DA2E8751CC0D9DF00CEF048 /* Home */,
+				8DA2E8741CC0D9C700CEF048 /* Explore */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8DA2E86D1CC0D69D00CEF048 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7230A39C1CB18A8D0068A037 /* MessageModel.h */,
+				7230A39D1CB18A8D0068A037 /* MessageModel.m */,
+				7230A3941CB17CB20068A037 /* MSStatus.h */,
+				7230A3951CB17CB20068A037 /* MSStatus.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8DA2E86E1CC0D6A600CEF048 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		8DA2E86F1CC0D6F000CEF048 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				728004D51C9D7FBD00057C0A /* HomeViewController.h */,
+				728004D61C9D7FBD00057C0A /* HomeViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		8DA2E8701CC0D6FB00CEF048 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				728004D81C9D7FCD00057C0A /* ExploreViewController.h */,
+				728004D91C9D7FCD00057C0A /* ExploreViewController.m */,
+				7230A3B41CB1A7760068A037 /* SearchViewController.h */,
+				7230A3B51CB1A7760068A037 /* SearchViewController.m */,
+			);
+			name = Explore;
+			sourceTree = "<group>";
+		};
+		8DA2E8711CC0D71200CEF048 /* GIF */ = {
+			isa = PBXGroup;
+			children = (
+				72F565C81CA172C70015E029 /* GIFViewController.h */,
+				72F565C91CA172C70015E029 /* GIFViewController.m */,
+				72F565CF1CA184330015E029 /* ModelGIFCapViewController.h */,
+				72F565D01CA184330015E029 /* ModelGIFCapViewController.m */,
+			);
+			name = GIF;
+			sourceTree = "<group>";
+		};
+		8DA2E8721CC0D71F00CEF048 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				728004DB1C9D7FF000057C0A /* MessageViewController.h */,
+				728004DC1C9D7FF000057C0A /* MessageViewController.m */,
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		8DA2E8731CC0D72B00CEF048 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				72FE4E351CB24F970012BEFF /* datasource and Delegate */,
+				72FE4E231CB24EA40012BEFF /* ProfileViewController.m */,
+				72FE4E221CB24EA40012BEFF /* ProfileViewController.h */,
+				7230A3B11CB1A32A0068A037 /* SettingTableViewController.h */,
+				7230A3B21CB1A32A0068A037 /* SettingTableViewController.m */,
+			);
+			name = Mine;
+			sourceTree = "<group>";
+		};
+		8DA2E8741CC0D9C700CEF048 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				8D42E65C1CB6354B00B611F8 /* ExploreHeaderView.m */,
+				8D42E65B1CB6354B00B611F8 /* ExploreHeaderView.h */,
+				8D42E6641CB63CF300B611F8 /* TagViewCell.h */,
+				8D42E6651CB63CF300B611F8 /* TagViewCell.m */,
+			);
+			name = Explore;
+			sourceTree = "<group>";
+		};
+		8DA2E8751CC0D9DF00CEF048 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		8DA2E8761CC0D9E900CEF048 /* GIF */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = GIF;
+			sourceTree = "<group>";
+		};
+		8DA2E8771CC0D9F300CEF048 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				7230A3991CB18A370068A037 /* MessageCell.h */,
+				7230A39A1CB18A370068A037 /* MessageCell.m */,
+				7230A3971CB187170068A037 /* MessageCell.xib */,
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		8DA2E8781CC0D9FC00CEF048 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				7230A3881CB174410068A037 /* MSTableView.h */,
+				7230A3891CB174410068A037 /* MSTableView.m */,
+				7230A38F1CB177A40068A037 /* MSTableViewCell.h */,
+				7230A3901CB177A40068A037 /* MSTableViewCell.m */,
+				8D42E6421CB60EC100B611F8 /* MineHeaderView.h */,
+				8D42E6431CB60EC100B611F8 /* MineHeaderView.m */,
+				7230A3921CB177CC0068A037 /* MSCell.xib */,
+				8D42E63E1CB60CF300B611F8 /* MineHeaderView.xib */,
+			);
+			name = Mine;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -918,6 +854,7 @@
 				8D42E6161CB5FDE600B611F8 /* info@2x.png in Resources */,
 				722726C51C9D8C76005BF2DD /* home@3x.png in Resources */,
 				8D42E6141CB5FDE600B611F8 /* mail.png in Resources */,
+				8DA2E87A1CC0DBE000CEF048 /* LaunchScreen.xib in Resources */,
 				7230A3AD1CB19F820068A037 /* setting.png in Resources */,
 				728004EA1C9D887400057C0A /* mine.png in Resources */,
 				8DCF6B021CAD716C00F6E83F /* brand.png in Resources */,
@@ -936,7 +873,6 @@
 				8D42E6551CB6245200B611F8 /* passwordIcon@2x.png in Resources */,
 				7230A3BD1CB1AA7A0068A037 /* StreamLayout.png in Resources */,
 				8D42E66E1CB651BE00B611F8 /* 3.png in Resources */,
-				728004961C9D76C900057C0A /* LaunchScreen.storyboard in Resources */,
 				722726C71C9D8C76005BF2DD /* explore@2x.png in Resources */,
 				728004EB1C9D887400057C0A /* mine@2x.png in Resources */,
 				722726C31C9D8C76005BF2DD /* home.png in Resources */,
@@ -1118,14 +1054,6 @@
 				728004901C9D76C900057C0A /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		728004941C9D76C900057C0A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				728004951C9D76C900057C0A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
