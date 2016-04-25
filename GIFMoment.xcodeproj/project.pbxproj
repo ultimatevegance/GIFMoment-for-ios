@@ -118,6 +118,8 @@
 		8D42E66D1CB651BE00B611F8 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D42E6691CB651BE00B611F8 /* 2.png */; };
 		8D42E66E1CB651BE00B611F8 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D42E66A1CB651BE00B611F8 /* 3.png */; };
 		8D42E66F1CB651BE00B611F8 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D42E66B1CB651BE00B611F8 /* 0.png */; };
+		8D6C19231CCE060800F7DED4 /* locicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D6C19221CCE060800F7DED4 /* locicon.png */; };
+		8D6C19271CCE20FF00F7DED4 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6C19261CCE20FF00F7DED4 /* FXBlurView.m */; };
 		8DA2E87A1CC0DBE000CEF048 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DA2E8791CC0DBE000CEF048 /* LaunchScreen.xib */; };
 		8DA2E8841CC0F7D200CEF048 /* Sub@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DA2E8821CC0F7D200CEF048 /* Sub@2x.png */; };
 		8DA2E8851CC0F7D200CEF048 /* Sub.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DA2E8831CC0F7D200CEF048 /* Sub.png */; };
@@ -293,6 +295,9 @@
 		8D42E6691CB651BE00B611F8 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		8D42E66A1CB651BE00B611F8 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		8D42E66B1CB651BE00B611F8 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
+		8D6C19221CCE060800F7DED4 /* locicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locicon.png; sourceTree = "<group>"; };
+		8D6C19251CCE20FF00F7DED4 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
+		8D6C19261CCE20FF00F7DED4 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
 		8DA2E8791CC0DBE000CEF048 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		8DA2E8821CC0F7D200CEF048 /* Sub@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sub@2x.png"; sourceTree = "<group>"; };
 		8DA2E8831CC0F7D200CEF048 /* Sub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sub.png; sourceTree = "<group>"; };
@@ -434,6 +439,7 @@
 		728004C01C9D7E8000057C0A /* 3rdLi */ = {
 			isa = PBXGroup;
 			children = (
+				8D6C19241CCE20FF00F7DED4 /* FXBlurView */,
 				72FE4E251CB24F660012BEFF /* MGSpotyViewController */,
 				72495E3C1CA1B9AB0044154B /* UIImage+animatedGIF */,
 				72F565CB1CA17E260015E029 /* NSGIF */,
@@ -578,8 +584,18 @@
 		8D42E6671CB6513300B611F8 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
+				8D6C19221CCE060800F7DED4 /* locicon.png */,
 			);
 			name = "New Group";
+			sourceTree = "<group>";
+		};
+		8D6C19241CCE20FF00F7DED4 /* FXBlurView */ = {
+			isa = PBXGroup;
+			children = (
+				8D6C19251CCE20FF00F7DED4 /* FXBlurView.h */,
+				8D6C19261CCE20FF00F7DED4 /* FXBlurView.m */,
+			);
+			path = FXBlurView;
 			sourceTree = "<group>";
 		};
 		8DA2E86B1CC0D68400CEF048 /* Controllers */ = {
@@ -915,6 +931,7 @@
 				8D42E6281CB6049A00B611F8 /* QQIcon@2x.png in Resources */,
 				8D42E6531CB6245200B611F8 /* accountIcon@2x.png in Resources */,
 				7230A3AE1CB19F820068A037 /* setting@2x.png in Resources */,
+				8D6C19231CCE060800F7DED4 /* locicon.png in Resources */,
 				8D42E6591CB6284200B611F8 /* menuBTB@2x.png in Resources */,
 				8D42E62A1CB6049A00B611F8 /* QQIcon@3x.png in Resources */,
 			);
@@ -994,6 +1011,7 @@
 				72495E3F1CA1B9AB0044154B /* UIImage+animatedGIF.m in Sources */,
 				7230A3B61CB1A7760068A037 /* SearchViewController.m in Sources */,
 				72FE4E311CB24F660012BEFF /* UIImage+ImageEffects.m in Sources */,
+				8D6C19271CCE20FF00F7DED4 /* FXBlurView.m in Sources */,
 				8D42E6321CB6092100B611F8 /* LoginViewController.m in Sources */,
 				8D42E65D1CB6354B00B611F8 /* ExploreHeaderView.m in Sources */,
 				72F565CE1CA17E260015E029 /* NSGIF.m in Sources */,

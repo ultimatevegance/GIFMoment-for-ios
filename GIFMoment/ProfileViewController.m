@@ -22,7 +22,7 @@
         MineHeaderView *headerView ;
     }
 
-- (instancetype)initWithMainImage:(UIImage *)image{
+- (instancetype)initWithMainImage:(UIImage *)image {
     self = [super initWithMainImage:image tableScrollingType:MGSpotyViewTableScrollingTypeNormal];
     if (self) {
         myDelegate = [MGViewControllerDelegate new];
@@ -30,7 +30,6 @@
         self.overViewUpFadeOut = YES;
         self.blurRadius = 9.f;
         self.tintColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
-        
     }
     
     
@@ -45,6 +44,7 @@
     [self _setupNaviItem];
     self.dataSource = myDataSource;
     self.delegate = myDelegate ;
+    
     self.view.backgroundColor = [UIColor clearColor];
    
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
@@ -81,6 +81,7 @@
 - (void)setting : (UITabBarItem *)setting{
     UIStoryboard *sto = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     SettingTableViewController *settingTVC = [sto instantiateViewControllerWithIdentifier:@"Setting"];
+    settingTVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:settingTVC animated:YES];
     
     

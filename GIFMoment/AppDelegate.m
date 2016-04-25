@@ -19,7 +19,7 @@
     
         [AVOSCloud setApplicationId:@"WkhWxzgDWKPRBSEyV6NwFzQe-gzGzoHsz"
                       clientKey:@"haHPOMpr7aY6J4HQLnVnXVxK"];
-        [NSThread sleepForTimeInterval:4.0];
+        [NSThread sleepForTimeInterval:3.0];
     
     
     return YES;
