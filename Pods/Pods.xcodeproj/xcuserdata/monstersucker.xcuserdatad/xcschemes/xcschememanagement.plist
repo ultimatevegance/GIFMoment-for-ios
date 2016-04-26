@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>LeanCloudSocial.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +23,21 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>1469924FC52F60B0068FA24EEFCB3EFC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>410B25DF16EA5C5B3E2698F74F9625FB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5963C687A1495F1C72883C3F9AA74551</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CDF69CBB316F576EA4926E5CEEC1531C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
