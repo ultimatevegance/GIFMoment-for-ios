@@ -13,4 +13,5 @@
 @property (strong, nonatomic)  UICollectionView *headerCollectionView;
 @property(strong,nonatomic)UILabel *tagLabel;
 @property(strong,nonatomic)UILabel *featureLabel;
+@property(strong,nonatomic)UIButton *allTageButton;
 @end

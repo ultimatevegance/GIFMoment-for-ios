@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import "MSTableView.h"
 #import <AVOSCloud/AVOSCloud.h>
+#import "DetailPostViewController.h"
 @interface HomeViewController ()
 @property (strong, nonatomic) IBOutlet MSTableView *tableView;
 
@@ -82,7 +83,7 @@
 #pragma mark -UITableView Delegate
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    return 300;
+    return 364;
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     
@@ -107,5 +108,9 @@
     return cell;
 }
 
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    DetailPostViewController *detailPostViewCtrl = [[DetailPostViewController alloc]init];
+    detailPostViewCtrl.hidesBottomBarWhenPushed = YES;
+    [self.navigationController setModalPresentationStyle:UIModalPresentationPopover];
+}
 @end

@@ -18,7 +18,7 @@
 - (CGFloat)spotyViewController:(MGSpotyViewController *)spotyViewController
        heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 300.0;
+    return 364.0;
 }
 
 - (CGFloat)spotyViewController:(MGSpotyViewController *)spotyViewController

@@ -7,7 +7,7 @@
 //
 
 #import "MessageViewController.h"
-
+#import "MessageDetailViewController.h"
 @interface MessageViewController ()
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
@@ -70,5 +70,10 @@
     
     return cell;
 }
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    MessageDetailViewController *messageDetailViewCtrl = [[MessageDetailViewController alloc]init];
+    [self.navigationController pushViewController:messageDetailViewCtrl animated:NO];
+    
+    
+}
 @end

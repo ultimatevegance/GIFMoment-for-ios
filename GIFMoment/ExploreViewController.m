@@ -10,6 +10,7 @@
 #import "SearchViewController.h"
 #import "MSTableView.h"
 #import "ExploreHeaderView.h"
+#import "AllTagListViewController.h"
 #define screenW [UIScreen mainScreen ].bounds.size.width
 @interface ExploreViewController ()<UIScrollViewDelegate>
 @property (strong, nonatomic) IBOutlet MSTableView *tableView;
@@ -40,26 +41,30 @@
     headerView.tagLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, headerView.headerScrollView.frame.size.height, screenW, 20)];
     [headerView.tagLabel setText:@"Featured Tag"];
     headerView.tagLabel.textAlignment = NSTextAlignmentCenter;
-    
-    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];
+    headerView.allTageButton = [[UIButton alloc]initWithFrame:CGRectMake(0, headerView.headerScrollView.frame.size.height, 20, 20)];
+    [headerView.allTageButton setImage:[UIImage imageNamed:@"allTagButton@2x.png"] forState:UIControlStateNormal];
+    [headerView.allTageButton addTarget:self action:@selector(allTagButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+//    [headerView.tagLabel addSubview:headerView.allTageButton];
+        UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];
     flowLayout.itemSize = CGSizeMake(80, 80);
 //    flowLayout.headerReferenceSize = CGSizeMake(0, 30);
     flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     headerView.headerCollectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, headerView.headerScrollView.frame.size.height + 20, screenW, 190) collectionViewLayout:flowLayout];
     headerView.featureLabel = [[UILabel alloc]initWithFrame:CGRectMake(0,headerView.headerCollectionView.frame.size.height + 140, screenW, 20)];
-    [headerView.featureLabel setText:@"Top On GIFMoment And Trending"];
+    [headerView.featureLabel setText:@"--Top On GIFMoment And Trending--"];
     headerView.featureLabel.textAlignment = NSTextAlignmentCenter;
     
     [headerView addSubview:headerView.headerScrollView];
     [headerView addSubview:headerView.tagLabel];
     [headerView addSubview:headerView.headerCollectionView];
     [headerView addSubview:headerView.featureLabel];
+    [headerView addSubview:headerView.allTageButton];
     
     
     
-    
-    
+    //header AD View
     headerView.headerScrollView.pagingEnabled = YES;
+    headerView.headerScrollView.showsHorizontalScrollIndicator = NO;
     headerView.headerScrollView.contentSize = CGSizeMake(screenW * 4, headerView.headerScrollView.frame.size.height);
     for (int i = 0; i <self.adImageArray.count ; i++) {
         UIImageView *adImageView = [[UIImageView alloc]init];
@@ -78,7 +83,14 @@
     
     
 }
-
+- (void)allTagButtonAction : (UIButton *)alltagButton{
+    
+    AllTagListViewController *allTaglistViewCtrl = [[AllTagListViewController alloc]init];
+    allTaglistViewCtrl.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:allTaglistViewCtrl animated:YES];
+    
+    
+}
 - (void)_setupNaviItem{
     UIButton *searchButton = [UIButton buttonWithType:UIButtonTypeCustom];
     searchButton.frame = CGRectMake(0, 0, 20, 20);
@@ -95,6 +107,7 @@
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     
     SearchViewController*searchViewCtrl = [storyBoard instantiateViewControllerWithIdentifier:@"Search"];
+    searchViewCtrl.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:searchViewCtrl animated:YES];
 
     
@@ -117,7 +130,7 @@
 #pragma mark -UITableView Delegate
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    return 300;
+    return 364;
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     
