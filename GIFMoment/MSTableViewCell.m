@@ -7,7 +7,7 @@
 //
 
 #import "MSTableViewCell.h"
-
+#import "UIImage+animatedGIF.h"
 @implementation MSTableViewCell
 
 - (void)awakeFromNib {
@@ -21,6 +21,8 @@
     self.userAvatarImageView.layer.masksToBounds = YES;
     [self.userAvatarImageView setImage:[UIImage imageNamed:@"avatar"]];
     self.backgroundColor = [UIColor darkGrayColor];
+    NSString *filePath = [[NSBundle mainBundle ] pathForResource:@"examplegif" ofType:@"gif"];
+    self.statusImageView.image  = [UIImage animatedImageWithAnimatedGIFURL:[NSURL fileURLWithPath:filePath]];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

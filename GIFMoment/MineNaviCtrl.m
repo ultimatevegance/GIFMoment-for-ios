@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     ProfileViewController *mVC = [[ProfileViewController alloc]initWithMainImage:[UIImage imageNamed:@"avatar"]];
     [self pushViewController:mVC animated:YES];
     

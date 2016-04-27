@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "IntroViewController.h"
+#import "MTTabController.h"
 #import <AVOSCloud/AVOSCloud.h>
 @interface AppDelegate ()
 
@@ -20,11 +22,22 @@
         [AVOSCloud setApplicationId:@"WkhWxzgDWKPRBSEyV6NwFzQe-gzGzoHsz"
                       clientKey:@"haHPOMpr7aY6J4HQLnVnXVxK"];
         [NSThread sleepForTimeInterval:3.0];
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"firstStart"]) {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"firstStart"];
+        NSLog(@"First Start");
+        IntroViewController *introViewCtrl = [[IntroViewController alloc]init];
+        self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+        [self.window setRootViewController:introViewCtrl];
+        self.window.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"ba.png"]];
+        [self.window makeKeyAndVisible];
+    }
     
-    
+    else{
+        NSLog(@"Not First Start");
+        
+    }
     return YES;
 }
-
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

@@ -10,8 +10,11 @@
 #import <MobileCoreServices/MobileCoreServices.h>
 #import "NSGIF.h"
 #import "UIImage+animatedGIF.h"
+#import "MBProgressHUD.h"
+#import "SendPostViewController.h"
+#import "PreviewViewController.h"
 @class NSGIF;
-@interface ModelGIFCapViewController ()
+@interface ModelGIFCapViewController ()<UIAlertViewDelegate>
 {
     
     __weak IBOutlet UIButton *_cancelButton;
@@ -19,7 +22,6 @@
 @end
 
 @implementation ModelGIFCapViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithRed:0.13 green:0.16 blue:0.19 alpha:0.7];
@@ -72,44 +74,51 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 
     NSURL *url = info[UIImagePickerControllerMediaURL];
+    self.pickURL = url;
     if (url) {
-        
-        [self.activityIndicator startAnimating];
-        self._capButton.hidden= YES;
-        self.activityIndicator.hidden = NO;
-        [NSGIF optimalGIFfromURL:url loopCount:0 completion:^(NSURL *GifURL) {
-            NSLog(@"Finished generating GIF: %@",GifURL);
-            self._previewImageView.image = [UIImage animatedImageWithAnimatedGIFURL:GifURL];
-            self._previewImageView.hidden = NO;
-            [self.activityIndicator stopAnimating];
+        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view  animated:YES];
+        hud.labelText = @"Preparing...";
+        hud.minSize = CGSizeMake(150.f, 100.f);
+         self._capButton.hidden= YES;
+        _cancelButton.hidden = YES;
+        dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0), ^{
+            // processing
+            [self doSomeWorkWithMixedProgress];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [hud hide:YES];
+            });
+        });
 
-            if (GifURL) {
-                self.activityIndicator.hidden = YES;
-                UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"success" message:@"gif created successfully!!" preferredStyle:UIAlertControllerStyleAlert];
-                // TODO保存到本地
-                UIAlertAction *save = [UIAlertAction actionWithTitle:@"save" style:UIAlertActionStyleDefault handler:nil];
-                //TODO发状态分享
-                UIAlertAction *share = [UIAlertAction actionWithTitle:@"share" style:UIAlertActionStyleDefault handler:nil];
-                [alert addAction:save];
-                [alert addAction:share];
-                [self presentViewController:alert animated:YES completion:nil];
-
-            } else {
-                UIAlertController *alertF = [UIAlertController alertControllerWithTitle:@"Failed" message:@"something wrong...try again!" preferredStyle:UIAlertControllerStyleAlert];
-                // TODO retake
-                UIAlertAction *retake = [UIAlertAction actionWithTitle:@"retake" style:UIAlertActionStyleDestructive handler:nil];
-                [alertF addAction:retake];
-                [self presentViewController:alertF animated:YES completion:nil];
-
-            }
-            
-        }];
-        
-      
-
-        
     }
+}
+- (void)doSomeWorkWithMixedProgress {
+    MBProgressHUD *hud = [MBProgressHUD HUDForView:self.view];
+    // Indeterminate mode
+    sleep(2);
+    // Back to indeterminate mode
+    dispatch_async(dispatch_get_main_queue(), ^{
+        hud.mode = MBProgressHUDModeIndeterminate;
+        hud.labelText =@"Processing...";
+    });
 
-
+    
+        [NSGIF optimalGIFfromURL:self.pickURL loopCount:0 completion:^(NSURL *GifURL) {
+        NSLog(@"Finished generating GIF: %@",GifURL);
+        self._previewImageView.image = [UIImage animatedImageWithAnimatedGIFURL:GifURL];
+        self._previewImageView.hidden = NO;
+        }];
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            UIImage *image = [[UIImage imageNamed:@"Checkmark"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+            UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+            hud.customView = imageView;
+            hud.mode = MBProgressHUDModeCustomView;
+            hud.labelText= @"Completed";
+        });
+    
+            sleep(2);
+    PreviewViewController *previewViewCtrl = [[ PreviewViewController alloc]initWithNibName:@"PreviewViewController" bundle:[NSBundle mainBundle]];
+    [self.navigationController presentViewController:previewViewCtrl animated:YES completion:nil];
+     
+    
 }
 @end

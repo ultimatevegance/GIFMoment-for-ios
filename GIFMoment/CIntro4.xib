@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MyCustomPanel">
+            <rect key="frame" x="0.0" y="0.0" width="319" height="532"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="getstart.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kwt-Yx-qwU" customClass="M">
+                    <rect key="frame" x="0.0" y="0.0" width="319" height="532"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZO0-Vw-ekU">
+                    <rect key="frame" x="44" y="411" width="230" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="230" id="Ib5-AE-hzY"/>
+                        <constraint firstAttribute="height" constant="30" id="yru-2Q-J4g"/>
+                    </constraints>
+                    <state key="normal" title="Start Your GIFMoment">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ZO0-Vw-ekU" firstAttribute="top" secondItem="Kwt-Yx-qwU" secondAttribute="bottom" constant="-121" id="9pf-MF-FKN"/>
+                <constraint firstItem="Kwt-Yx-qwU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="EDD-d8-RCa"/>
+                <constraint firstItem="Kwt-Yx-qwU" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ITL-si-69R"/>
+                <constraint firstItem="ZO0-Vw-ekU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NAH-ej-XQK"/>
+                <constraint firstItem="Kwt-Yx-qwU" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="YCL-4M-F64"/>
+                <constraint firstItem="Kwt-Yx-qwU" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="l12-w6-VZu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="251.5" y="316"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="getstart.png" width="810" height="1340"/>
+    </resources>
+</document>

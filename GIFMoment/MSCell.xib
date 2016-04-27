@@ -58,9 +58,9 @@
                             <constraint firstAttribute="height" constant="45" id="hc7-a5-rfH"/>
                         </constraints>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sampleImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="UfJ-T8-GXj">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UfJ-T8-GXj">
                         <rect key="frame" x="0.0" y="54" width="360" height="200"/>
-                        <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="200" id="mVr-Kb-XII"/>
                         </constraints>
@@ -151,7 +151,6 @@
         <image name="download.png" width="30" height="30"/>
         <image name="like.png" width="30" height="30"/>
         <image name="locicon.png" width="19" height="25"/>
-        <image name="sampleImage.png" width="855" height="565"/>
         <image name="share.png" width="30" height="30"/>
         <image name="time.png" width="31" height="32"/>
     </resources>

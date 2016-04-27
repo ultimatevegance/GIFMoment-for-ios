@@ -37,9 +37,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="Djh-Ec-ydf" kind="relationship" relationship="rootViewController" id="r1b-mx-2jy"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dPd-Z4-ikK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -648,7 +645,7 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="GIFMoment Is my personal Project which is a fantastical gif social community." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="r24-Qv-daR">
                                 <rect key="frame" x="38.5" y="222.5" width="243" height="123"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="243" id="Z3I-Pf-sHL"/>
                                     <constraint firstAttribute="height" constant="123" id="gbu-ec-J5j"/>
@@ -656,7 +653,7 @@
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GIFMomentLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="z7T-er-cge">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoStart.png" translatesAutoresizingMaskIntoConstraints="NO" id="z7T-er-cge">
                                 <rect key="frame" x="104" y="66" width="113" height="113"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="113" id="A9o-O3-9p2"/>
@@ -664,7 +661,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="r24-Qv-daR" firstAttribute="centerY" secondItem="LRt-B3-6dc" secondAttribute="centerY" id="KMZ-Hb-zCc"/>
                             <constraint firstItem="r24-Qv-daR" firstAttribute="centerX" secondItem="LRt-B3-6dc" secondAttribute="centerX" id="TKD-5u-FF1"/>
@@ -753,44 +750,6 @@
             </objects>
             <point key="canvasLocation" x="347" y="-283"/>
         </scene>
-        <!--GIF-->
-        <scene sceneID="9yJ-0T-MIB">
-            <objects>
-                <viewController id="Djh-Ec-ydf" customClass="GIFViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="9t6-Zi-db2"/>
-                        <viewControllerLayoutGuide type="bottom" id="qcl-t7-Bs8"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="qO8-Xw-NL5">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbg-dp-ixp">
-                                <rect key="frame" x="112" y="243" width="96" height="34"/>
-                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="19"/>
-                                <state key="normal" title="Capture GIF">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="u6P-Bq-e6l" kind="modal" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="5E9-uJ-ilR"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.013251746073365211" green="0.0" blue="0.9163171648979187" alpha="0.76196509009009006" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="fbg-dp-ixp" firstAttribute="centerY" secondItem="qO8-Xw-NL5" secondAttribute="centerY" id="ZB9-zJ-7IS"/>
-                            <constraint firstItem="fbg-dp-ixp" firstAttribute="centerX" secondItem="qO8-Xw-NL5" secondAttribute="centerX" id="c5b-Z7-Jgp"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="GIF" id="Gjo-ml-FnE"/>
-                    <connections>
-                        <outlet property="_gifCapButton" destination="fbg-dp-ixp" id="2Qo-Kk-94X"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ACg-tj-eDZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="391" y="360"/>
-        </scene>
         <!--Message-->
         <scene sceneID="cgL-3Z-Ckq">
             <objects>
@@ -832,7 +791,7 @@
         <!--GIF-->
         <scene sceneID="hEo-Ro-AsU">
             <objects>
-                <viewController id="u6P-Bq-e6l" customClass="ModelGIFCapViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GifCapViewCtrl" id="u6P-Bq-e6l" customClass="ModelGIFCapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HoD-oz-dox"/>
                         <viewControllerLayoutGuide type="bottom" id="zvs-zg-JqA"/>
@@ -851,37 +810,42 @@
                                     <action selector="cap:" destination="u6P-Bq-e6l" eventType="touchUpInside" id="zFe-G3-Sdd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLT-HZ-fhm">
+                                <rect key="frame" x="105" y="464" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ro-JE-iYK">
+                                <rect key="frame" x="105" y="464" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y62-3k-tYB">
+                                <rect key="frame" x="13" y="464" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J6S-lY-zD3">
+                                <rect key="frame" x="0.0" y="20" width="320" height="348"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EdT-us-B7M">
                                 <rect key="frame" x="0.0" y="530" width="320" height="38"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.8687009215" green="0.053153909739999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="cancel">
-                                    <color key="titleColor" red="0.86870092153549194" green="0.053153909742832184" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="cancel:" destination="u6P-Bq-e6l" eventType="touchUpInside" id="Ul0-Fn-F6s"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Uvc-Nb-Usc">
-                                <rect key="frame" x="140" y="264" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="FVa-UB-kRp"/>
-                                    <constraint firstAttribute="width" constant="40" id="TKN-WI-sjA"/>
-                                </constraints>
-                            </activityIndicatorView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J6S-lY-zD3">
-                                <rect key="frame" x="0.0" y="20" width="320" height="348"/>
-                            </imageView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="J6S-lY-zD3" firstAttribute="width" secondItem="QEL-Nv-zd8" secondAttribute="width" id="9jL-BP-zSk"/>
                             <constraint firstItem="J6S-lY-zD3" firstAttribute="centerX" secondItem="QEL-Nv-zd8" secondAttribute="centerX" id="HoH-bf-ccJ"/>
                             <constraint firstItem="zvs-zg-JqA" firstAttribute="top" secondItem="EdT-us-B7M" secondAttribute="bottom" id="JJU-KR-1Je"/>
-                            <constraint firstItem="Uvc-Nb-Usc" firstAttribute="centerY" secondItem="QEL-Nv-zd8" secondAttribute="centerY" id="QTg-1Z-1Sf"/>
                             <constraint firstItem="EdT-us-B7M" firstAttribute="width" secondItem="QEL-Nv-zd8" secondAttribute="width" id="X2F-9f-rrE"/>
                             <constraint firstItem="Anu-BX-rga" firstAttribute="centerX" secondItem="QEL-Nv-zd8" secondAttribute="centerX" id="dgY-RJ-drP"/>
                             <constraint firstItem="J6S-lY-zD3" firstAttribute="top" secondItem="HoD-oz-dox" secondAttribute="bottom" id="egl-Y3-JDQ"/>
-                            <constraint firstItem="Uvc-Nb-Usc" firstAttribute="centerX" secondItem="QEL-Nv-zd8" secondAttribute="centerX" id="pxB-p8-NJx"/>
                             <constraint firstItem="Anu-BX-rga" firstAttribute="centerY" secondItem="QEL-Nv-zd8" secondAttribute="centerY" id="tQc-8u-bpk"/>
                             <constraint firstItem="EdT-us-B7M" firstAttribute="centerX" secondItem="QEL-Nv-zd8" secondAttribute="centerX" id="xuj-ca-zWL"/>
                             <constraint firstItem="zvs-zg-JqA" firstAttribute="top" secondItem="J6S-lY-zD3" secondAttribute="bottom" constant="200" id="yaP-VC-ukB"/>
@@ -892,16 +856,15 @@
                         <outlet property="_cancelButton" destination="EdT-us-B7M" id="ZhR-cC-Mhe"/>
                         <outlet property="_capButton" destination="Anu-BX-rga" id="Xyb-lP-OXU"/>
                         <outlet property="_previewImageView" destination="J6S-lY-zD3" id="Yfh-P6-TAW"/>
-                        <outlet property="activityIndicator" destination="Uvc-Nb-Usc" id="hb2-5P-HdS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aRg-Ij-vOV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="880" y="360"/>
+            <point key="canvasLocation" x="296" y="604"/>
         </scene>
     </scenes>
     <resources>
-        <image name="GIFMomentLogo.png" width="181" height="181"/>
+        <image name="LogoStart.png" width="100" height="100"/>
         <image name="QQIcon.png" width="52" height="52"/>
         <image name="WechatIcon.png" width="52" height="52"/>
         <image name="WeiboIcon.png" width="52" height="52"/>

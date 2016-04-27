@@ -7,7 +7,9 @@
 //
 
 #import "IntroViewController.h"
-
+#import "MYIntroductionPanel.h"
+#import "MYBlurIntroductionView.h"
+#import "MyCustomPanel.h"
 @interface IntroViewController ()
 
 @end
@@ -16,9 +18,39 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self _setUpIntro];
+    
 }
+- (void)_setUpIntro{
+    
+    MYIntroductionPanel *panel1 = [[ MYIntroductionPanel alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) title:@"Welcome to GIFMoment" description:@"GIFMoment Is a Fabulus gif Social Community Which Brings People Who Share same Interests Back Together!" image:[UIImage imageNamed:@"intoex.png"]];
+    panel1.PanelTitleLabel.textAlignment = NSTextAlignmentCenter;
+    panel1.PanelDescriptionLabel.textAlignment = NSTextAlignmentCenter;
+    MYIntroductionPanel *panel2 = [[ MYIntroductionPanel alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) title:@"Welcome to GIFMoment" description:@"GIFMoment Is a Fabulus gif Social Community Which Brings People Who Share same Interests Back Together!" image:[UIImage imageNamed:@"intoex2.png"]];
+    panel2.PanelTitleLabel.textAlignment = NSTextAlignmentCenter;
+    panel2.PanelDescriptionLabel.textAlignment = NSTextAlignmentCenter;
 
+    MYIntroductionPanel *panel3 = [[ MYIntroductionPanel alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) title:@"Welcome to GIFMoment" description:@"GIFMoment Is a Fabulus gif Social Community Which Brings People Who Share same Interests Back Together!" image:[UIImage imageNamed:@"intoex3.png"]];
+    panel3.PanelTitleLabel.textAlignment = NSTextAlignmentCenter;
+    panel3.PanelDescriptionLabel.textAlignment = NSTextAlignmentCenter;
+
+    MyCustomPanel *pannel4 = [[MyCustomPanel alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) nibNamed:@"CIntro4"];
+    
+    MYBlurIntroductionView *myIntroView = [[MYBlurIntroductionView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    myIntroView.delegate = self;
+    NSArray *panelArray = @[panel1,panel2,panel3,pannel4];
+    [myIntroView buildIntroductionWithPanels:panelArray];
+    
+    [self.view addSubview:myIntroView];
+    
+    
+    
+    
+    
+    
+    
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

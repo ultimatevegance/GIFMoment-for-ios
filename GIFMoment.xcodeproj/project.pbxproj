@@ -72,6 +72,18 @@
 		72FE4E341CB24F660012BEFF /* MGSpotyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE4E2E1CB24F660012BEFF /* MGSpotyViewController.m */; };
 		72FE4E3A1CB24FBC0012BEFF /* MGViewControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE4E371CB24FBC0012BEFF /* MGViewControllerDataSource.m */; };
 		72FE4E3B1CB24FBC0012BEFF /* MGViewControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE4E391CB24FBC0012BEFF /* MGViewControllerDelegate.m */; };
+		8D34EB921CD05ECF0013B795 /* intoex.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D34EB911CD05ECF0013B795 /* intoex.png */; };
+		8D34EB941CD05F740013B795 /* intoex2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D34EB931CD05F740013B795 /* intoex2.png */; };
+		8D34EB961CD05F7A0013B795 /* intoex3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D34EB951CD05F7A0013B795 /* intoex3.png */; };
+		8D34EB981CD060040013B795 /* CIntro4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D34EB971CD060040013B795 /* CIntro4.xib */; };
+		8D34EB9A1CD0606D0013B795 /* getstart.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D34EB991CD0606D0013B795 /* getstart.png */; };
+		8D34EB9D1CD060F70013B795 /* MyCustomPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D34EB9C1CD060F70013B795 /* MyCustomPanel.m */; };
+		8D34EB9F1CD071C60013B795 /* ba.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D34EB9E1CD071C60013B795 /* ba.png */; };
+		8D34EBA11CD081800013B795 /* examplegif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8D34EBA01CD081800013B795 /* examplegif.gif */; };
+		8D34EBA51CD0A45E0013B795 /* SendPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D34EBA31CD0A45E0013B795 /* SendPostViewController.m */; };
+		8D34EBA61CD0A45E0013B795 /* SendPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D34EBA41CD0A45E0013B795 /* SendPostViewController.xib */; };
+		8D34EBAA1CD0BAC80013B795 /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D34EBA81CD0BAC80013B795 /* PreviewViewController.m */; };
+		8D34EBAB1CD0BAC80013B795 /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D34EBA91CD0BAC80013B795 /* PreviewViewController.xib */; };
 		8D357A271CB4F1D30062D78E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D357A261CB4F1D30062D78E /* SystemConfiguration.framework */; };
 		8D357A291CB4F1F90062D78E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D357A281CB4F1F90062D78E /* CoreLocation.framework */; };
 		8D357A2B1CB4F2030062D78E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D357A2A1CB4F2030062D78E /* CoreTelephony.framework */; };
@@ -96,7 +108,6 @@
 		8D42E6371CB6093A00B611F8 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D42E6351CB6093A00B611F8 /* SignUpViewController.m */; };
 		8D42E6381CB6093A00B611F8 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D42E6361CB6093A00B611F8 /* SignUpViewController.xib */; };
 		8D42E63C1CB6096E00B611F8 /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D42E63A1CB6096E00B611F8 /* IntroViewController.m */; };
-		8D42E63D1CB6096E00B611F8 /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D42E63B1CB6096E00B611F8 /* IntroViewController.xib */; };
 		8D42E63F1CB60CF300B611F8 /* MineHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D42E63E1CB60CF300B611F8 /* MineHeaderView.xib */; };
 		8D42E6441CB60EC100B611F8 /* MineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D42E6431CB60EC100B611F8 /* MineHeaderView.m */; };
 		8D42E6481CB61F1400B611F8 /* LogoStart.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D42E6451CB61F1400B611F8 /* LogoStart.png */; };
@@ -118,6 +129,7 @@
 		8D42E66F1CB651BE00B611F8 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D42E66B1CB651BE00B611F8 /* 0.png */; };
 		8D6C19231CCE060800F7DED4 /* locicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D6C19221CCE060800F7DED4 /* locicon.png */; };
 		8D6C19271CCE20FF00F7DED4 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6C19261CCE20FF00F7DED4 /* FXBlurView.m */; };
+		8D7CA9821CD0C33200DACB80 /* GifNaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7CA9811CD0C33200DACB80 /* GifNaviController.m */; };
 		8DA2E87A1CC0DBE000CEF048 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DA2E8791CC0DBE000CEF048 /* LaunchScreen.xib */; };
 		8DA2E8841CC0F7D200CEF048 /* Sub@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DA2E8821CC0F7D200CEF048 /* Sub@2x.png */; };
 		8DA2E8851CC0F7D200CEF048 /* Sub.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DA2E8831CC0F7D200CEF048 /* Sub.png */; };
@@ -250,6 +262,21 @@
 		72FE4E371CB24FBC0012BEFF /* MGViewControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGViewControllerDataSource.m; sourceTree = "<group>"; };
 		72FE4E381CB24FBC0012BEFF /* MGViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGViewControllerDelegate.h; sourceTree = "<group>"; };
 		72FE4E391CB24FBC0012BEFF /* MGViewControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGViewControllerDelegate.m; sourceTree = "<group>"; };
+		8D34EB911CD05ECF0013B795 /* intoex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intoex.png; sourceTree = "<group>"; };
+		8D34EB931CD05F740013B795 /* intoex2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intoex2.png; sourceTree = "<group>"; };
+		8D34EB951CD05F7A0013B795 /* intoex3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intoex3.png; sourceTree = "<group>"; };
+		8D34EB971CD060040013B795 /* CIntro4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CIntro4.xib; sourceTree = "<group>"; };
+		8D34EB991CD0606D0013B795 /* getstart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = getstart.png; sourceTree = "<group>"; };
+		8D34EB9B1CD060F70013B795 /* MyCustomPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomPanel.h; sourceTree = "<group>"; };
+		8D34EB9C1CD060F70013B795 /* MyCustomPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomPanel.m; sourceTree = "<group>"; };
+		8D34EB9E1CD071C60013B795 /* ba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ba.png; sourceTree = "<group>"; };
+		8D34EBA01CD081800013B795 /* examplegif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = examplegif.gif; sourceTree = "<group>"; };
+		8D34EBA21CD0A45E0013B795 /* SendPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendPostViewController.h; sourceTree = "<group>"; };
+		8D34EBA31CD0A45E0013B795 /* SendPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendPostViewController.m; sourceTree = "<group>"; };
+		8D34EBA41CD0A45E0013B795 /* SendPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendPostViewController.xib; sourceTree = "<group>"; };
+		8D34EBA71CD0BAC80013B795 /* PreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
+		8D34EBA81CD0BAC80013B795 /* PreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewViewController.m; sourceTree = "<group>"; };
+		8D34EBA91CD0BAC80013B795 /* PreviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreviewViewController.xib; sourceTree = "<group>"; };
 		8D357A261CB4F1D30062D78E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8D357A281CB4F1F90062D78E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8D357A2A1CB4F2030062D78E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -277,7 +304,6 @@
 		8D42E6361CB6093A00B611F8 /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		8D42E6391CB6096E00B611F8 /* IntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroViewController.h; sourceTree = "<group>"; };
 		8D42E63A1CB6096E00B611F8 /* IntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroViewController.m; sourceTree = "<group>"; };
-		8D42E63B1CB6096E00B611F8 /* IntroViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntroViewController.xib; sourceTree = "<group>"; };
 		8D42E63E1CB60CF300B611F8 /* MineHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineHeaderView.xib; sourceTree = "<group>"; };
 		8D42E6421CB60EC100B611F8 /* MineHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineHeaderView.h; sourceTree = "<group>"; };
 		8D42E6431CB60EC100B611F8 /* MineHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineHeaderView.m; sourceTree = "<group>"; };
@@ -303,6 +329,8 @@
 		8D6C19221CCE060800F7DED4 /* locicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locicon.png; sourceTree = "<group>"; };
 		8D6C19251CCE20FF00F7DED4 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
 		8D6C19261CCE20FF00F7DED4 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
+		8D7CA9801CD0C33200DACB80 /* GifNaviController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifNaviController.h; sourceTree = "<group>"; };
+		8D7CA9811CD0C33200DACB80 /* GifNaviController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifNaviController.m; sourceTree = "<group>"; };
 		8DA2E8791CC0DBE000CEF048 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		8DA2E8821CC0F7D200CEF048 /* Sub@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sub@2x.png"; sourceTree = "<group>"; };
 		8DA2E8831CC0F7D200CEF048 /* Sub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sub.png; sourceTree = "<group>"; };
@@ -468,6 +496,11 @@
 		728004E11C9D821000057C0A /* IMAGES */ = {
 			isa = PBXGroup;
 			children = (
+				8D34EB9E1CD071C60013B795 /* ba.png */,
+				8D34EB911CD05ECF0013B795 /* intoex.png */,
+				8D34EB931CD05F740013B795 /* intoex2.png */,
+				8D34EB951CD05F7A0013B795 /* intoex3.png */,
+				8D34EB991CD0606D0013B795 /* getstart.png */,
 				8D42E6681CB651BE00B611F8 /* 1.png */,
 				8D42E6691CB651BE00B611F8 /* 2.png */,
 				8D42E66A1CB651BE00B611F8 /* 3.png */,
@@ -595,7 +628,9 @@
 				8D42E6361CB6093A00B611F8 /* SignUpViewController.xib */,
 				8D42E6391CB6096E00B611F8 /* IntroViewController.h */,
 				8D42E63A1CB6096E00B611F8 /* IntroViewController.m */,
-				8D42E63B1CB6096E00B611F8 /* IntroViewController.xib */,
+				8D34EB971CD060040013B795 /* CIntro4.xib */,
+				8D34EB9B1CD060F70013B795 /* MyCustomPanel.h */,
+				8D34EB9C1CD060F70013B795 /* MyCustomPanel.m */,
 			);
 			name = Start;
 			sourceTree = "<group>";
@@ -627,6 +662,8 @@
 				728004BA1C9D7CBA00057C0A /* MTTabController.m */,
 				7258B4C41CB3F55900B01BDF /* MineNaviCtrl.h */,
 				7258B4C51CB3F55900B01BDF /* MineNaviCtrl.m */,
+				8D7CA9801CD0C33200DACB80 /* GifNaviController.h */,
+				8D7CA9811CD0C33200DACB80 /* GifNaviController.m */,
 				8D42E62E1CB608E300B611F8 /* Start */,
 				8DA2E86F1CC0D6F000CEF048 /* Home */,
 				8DA2E8721CC0D71F00CEF048 /* Message */,
@@ -700,6 +737,12 @@
 				72F565C91CA172C70015E029 /* GIFViewController.m */,
 				72F565CF1CA184330015E029 /* ModelGIFCapViewController.h */,
 				72F565D01CA184330015E029 /* ModelGIFCapViewController.m */,
+				8D34EBA21CD0A45E0013B795 /* SendPostViewController.h */,
+				8D34EBA31CD0A45E0013B795 /* SendPostViewController.m */,
+				8D34EBA41CD0A45E0013B795 /* SendPostViewController.xib */,
+				8D34EBA71CD0BAC80013B795 /* PreviewViewController.h */,
+				8D34EBA81CD0BAC80013B795 /* PreviewViewController.m */,
+				8D34EBA91CD0BAC80013B795 /* PreviewViewController.xib */,
 			);
 			name = GIF;
 			sourceTree = "<group>";
@@ -774,6 +817,7 @@
 				8D42E6431CB60EC100B611F8 /* MineHeaderView.m */,
 				7230A3921CB177CC0068A037 /* MSCell.xib */,
 				8D42E63E1CB60CF300B611F8 /* MineHeaderView.xib */,
+				8D34EBA01CD081800013B795 /* examplegif.gif */,
 			);
 			name = Mine;
 			sourceTree = "<group>";
@@ -891,10 +935,13 @@
 				8D42E63F1CB60CF300B611F8 /* MineHeaderView.xib in Resources */,
 				7230A3B01CB19F820068A037 /* search@2x.png in Resources */,
 				722726D01C9D8DC1005BF2DD /* gif.png in Resources */,
+				8D34EB921CD05ECF0013B795 /* intoex.png in Resources */,
 				8DD0BC261CCF60B900621441 /* download@2x.png in Resources */,
 				728004E71C9D821000057C0A /* tabbar@2x.png in Resources */,
 				722726BA1C9D8A68005BF2DD /* message@2x.png in Resources */,
+				8D34EB9F1CD071C60013B795 /* ba.png in Resources */,
 				728004E61C9D821000057C0A /* tabbar.png in Resources */,
+				8D34EBA61CD0A45E0013B795 /* SendPostViewController.xib in Resources */,
 				8D42E61E1CB5FDE600B611F8 /* link@2x.png in Resources */,
 				8D42E6131CB5FDE600B611F8 /* info.png in Resources */,
 				722726C81C9D8C76005BF2DD /* explore@3x.png in Resources */,
@@ -903,6 +950,7 @@
 				8DA2E8851CC0F7D200CEF048 /* Sub.png in Resources */,
 				722726C41C9D8C76005BF2DD /* home@2x.png in Resources */,
 				8D42E6151CB5FDE600B611F8 /* noti@2x.png in Resources */,
+				8D34EB981CD060040013B795 /* CIntro4.xib in Resources */,
 				722726B61C9D8A55005BF2DD /* mine@3x.png in Resources */,
 				8D42E6161CB5FDE600B611F8 /* info@2x.png in Resources */,
 				722726C51C9D8C76005BF2DD /* home@3x.png in Resources */,
@@ -922,10 +970,12 @@
 				8DD0BC2E1CCF757E00621441 /* DetailPostView.xib in Resources */,
 				7230A3981CB187170068A037 /* MessageCell.xib in Resources */,
 				8D42E6561CB6245200B611F8 /* accountIcon.png in Resources */,
+				8D34EB941CD05F740013B795 /* intoex2.png in Resources */,
 				7230A3931CB177CC0068A037 /* MSCell.xib in Resources */,
 				8D42E6551CB6245200B611F8 /* passwordIcon@2x.png in Resources */,
 				7230A3BD1CB1AA7A0068A037 /* StreamLayout.png in Resources */,
 				8D42E66E1CB651BE00B611F8 /* 3.png in Resources */,
+				8D34EBA11CD081800013B795 /* examplegif.gif in Resources */,
 				722726C71C9D8C76005BF2DD /* explore@2x.png in Resources */,
 				728004EB1C9D887400057C0A /* mine@2x.png in Resources */,
 				722726C31C9D8C76005BF2DD /* home.png in Resources */,
@@ -935,12 +985,13 @@
 				8D42E66D1CB651BE00B611F8 /* 2.png in Resources */,
 				728004931C9D76C900057C0A /* Assets.xcassets in Resources */,
 				8D42E64A1CB61F1400B611F8 /* logTFB.png in Resources */,
+				8D34EBAB1CD0BAC80013B795 /* PreviewViewController.xib in Resources */,
 				8D42E61D1CB5FDE600B611F8 /* link.png in Resources */,
 				8D42E65A1CB6284200B611F8 /* menuBTB.png in Resources */,
 				7230A3BE1CB1AA7A0068A037 /* StreamLayout@2x.png in Resources */,
 				728004911C9D76C900057C0A /* Main.storyboard in Resources */,
-				8D42E63D1CB6096E00B611F8 /* IntroViewController.xib in Resources */,
 				8D42E6331CB6092100B611F8 /* LoginViewController.xib in Resources */,
+				8D34EB9A1CD0606D0013B795 /* getstart.png in Resources */,
 				7230A3A61CB1947F0068A037 /* location@2x.png in Resources */,
 				8D42E64C1CB6206D00B611F8 /* loginBTB.png in Resources */,
 				8D42E64E1CB6215F00B611F8 /* signUpBTB.png in Resources */,
@@ -949,6 +1000,7 @@
 				8D42E61C1CB5FDE600B611F8 /* local@2x.png in Resources */,
 				8D42E62B1CB6049A00B611F8 /* WechatIcon@2x.png in Resources */,
 				7230A3BB1CB1AA7A0068A037 /* LLocation.png in Resources */,
+				8D34EB961CD05F7A0013B795 /* intoex3.png in Resources */,
 				8DD0BC221CCF5FEF00621441 /* share@2x.png in Resources */,
 				8D42E6291CB6049A00B611F8 /* WechatIcon@3x.png in Resources */,
 				722726D11C9D8DC1005BF2DD /* gif@3x.png in Resources */,
@@ -1045,6 +1097,7 @@
 				72FE4E311CB24F660012BEFF /* UIImage+ImageEffects.m in Sources */,
 				8D6C19271CCE20FF00F7DED4 /* FXBlurView.m in Sources */,
 				8D42E6321CB6092100B611F8 /* LoginViewController.m in Sources */,
+				8D7CA9821CD0C33200DACB80 /* GifNaviController.m in Sources */,
 				8D42E65D1CB6354B00B611F8 /* ExploreHeaderView.m in Sources */,
 				72F565CE1CA17E260015E029 /* NSGIF.m in Sources */,
 				728004BB1C9D7CBA00057C0A /* MTTabController.m in Sources */,
@@ -1061,9 +1114,11 @@
 				7230A39E1CB18A8D0068A037 /* MessageModel.m in Sources */,
 				72F565CA1CA172C70015E029 /* GIFViewController.m in Sources */,
 				8DD0BC1A1CCF51C800621441 /* AllTagListViewController.m in Sources */,
+				8D34EBA51CD0A45E0013B795 /* SendPostViewController.m in Sources */,
 				8DD0BC151CCF4BAC00621441 /* UserData.m in Sources */,
 				8D42E6441CB60EC100B611F8 /* MineHeaderView.m in Sources */,
 				8DD0BC291CCF700500621441 /* DetailPostViewController.m in Sources */,
+				8D34EBAA1CD0BAC80013B795 /* PreviewViewController.m in Sources */,
 				7230A3B31CB1A32A0068A037 /* SettingTableViewController.m in Sources */,
 				7222CEEE1CA2D831008ECE97 /* BaseViewController.m in Sources */,
 				7230A39B1CB18A370068A037 /* MessageCell.m in Sources */,
@@ -1073,6 +1128,7 @@
 				728004DD1C9D7FF000057C0A /* MessageViewController.m in Sources */,
 				8DD0BC2C1CCF724700621441 /* MessageDetailViewController.m in Sources */,
 				8D42E6371CB6093A00B611F8 /* SignUpViewController.m in Sources */,
+				8D34EB9D1CD060F70013B795 /* MyCustomPanel.m in Sources */,
 				72FE4E331CB24F660012BEFF /* MGSpotyView.m in Sources */,
 				8D42E6661CB63CF300B611F8 /* TagViewCell.m in Sources */,
 			);
@@ -1213,6 +1269,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.monstersucker.gifmoment.GIFMoment.ggggg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
 		};
@@ -1226,6 +1283,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.monstersucker.gifmoment.GIFMoment.ggggg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;
 		};

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface IntroViewController : UIViewController
+#import "MYBlurIntroductionView.h"
+@interface IntroViewController : UIViewController<MYIntroductionDelegate>
 
 @end
