@@ -14,6 +14,5 @@
 @property (strong, nonatomic) IBOutlet UIButton *_capButton;
 @property(strong,nonatomic)NSURL *gifURL;
 @property(strong,nonatomic)NSURL *pickURL;
-@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property (strong, nonatomic) IBOutlet UIImageView *_previewImageView;
 @end

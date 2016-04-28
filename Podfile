@@ -5,3 +5,4 @@ pod 'AVOSCloudCrashReporting' # 错误报告模块
 pod 'LeanCloudSocial'
 pod 'MYBlurIntroductionView'
 pod 'MBProgressHUD', '~> 0.9.2'
+pod 'TGCameraViewController'

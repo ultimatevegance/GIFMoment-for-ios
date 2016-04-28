@@ -27,8 +27,6 @@
     self.view.backgroundColor = [UIColor colorWithRed:0.13 green:0.16 blue:0.19 alpha:0.7];
     _cancelButton.layer.cornerRadius = 10;
 
-    self.activityIndicator.color = [UIColor grayColor];
-    self.activityIndicator.hidden = YES;
     self._previewImageView.hidden = YES;
     // Do any additional setup after loading the view.
     

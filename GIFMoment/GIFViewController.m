@@ -7,6 +7,7 @@
 //
 
 #import "GIFViewController.h"
+#import "CustomGifCapViewController.h"
 #import <Photos/Photos.h>
 @interface GIFViewController ()
 
@@ -18,11 +19,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor colorWithRed:0.13 green:0.16 blue:0.19 alpha:1];
-
+    self.title = @"GIF";
+    
 }
 
 
-
+- (IBAction)gifCap:(id)sender{
+    CustomGifCapViewController *customGifCapViewCtrl = [[CustomGifCapViewController alloc ]initWithNibName:@"CustomGifCapViewController" bundle:[NSBundle mainBundle]];
+    [self.navigationController presentViewController:customGifCapViewCtrl animated:YES completion:nil];
+    
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

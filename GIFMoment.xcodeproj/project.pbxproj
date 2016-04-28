@@ -127,9 +127,10 @@
 		8D42E66D1CB651BE00B611F8 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D42E6691CB651BE00B611F8 /* 2.png */; };
 		8D42E66E1CB651BE00B611F8 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D42E66A1CB651BE00B611F8 /* 3.png */; };
 		8D42E66F1CB651BE00B611F8 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D42E66B1CB651BE00B611F8 /* 0.png */; };
+		8D674A521CD1A2C00003DD1A /* CustomGifCapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D674A501CD1A2C00003DD1A /* CustomGifCapViewController.m */; };
+		8D674A531CD1A2C00003DD1A /* CustomGifCapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D674A511CD1A2C00003DD1A /* CustomGifCapViewController.xib */; };
 		8D6C19231CCE060800F7DED4 /* locicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D6C19221CCE060800F7DED4 /* locicon.png */; };
 		8D6C19271CCE20FF00F7DED4 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6C19261CCE20FF00F7DED4 /* FXBlurView.m */; };
-		8D7CA9821CD0C33200DACB80 /* GifNaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7CA9811CD0C33200DACB80 /* GifNaviController.m */; };
 		8DA2E87A1CC0DBE000CEF048 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DA2E8791CC0DBE000CEF048 /* LaunchScreen.xib */; };
 		8DA2E8841CC0F7D200CEF048 /* Sub@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DA2E8821CC0F7D200CEF048 /* Sub@2x.png */; };
 		8DA2E8851CC0F7D200CEF048 /* Sub.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DA2E8831CC0F7D200CEF048 /* Sub.png */; };
@@ -326,11 +327,12 @@
 		8D42E6691CB651BE00B611F8 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		8D42E66A1CB651BE00B611F8 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		8D42E66B1CB651BE00B611F8 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
+		8D674A4F1CD1A2C00003DD1A /* CustomGifCapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomGifCapViewController.h; sourceTree = "<group>"; };
+		8D674A501CD1A2C00003DD1A /* CustomGifCapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomGifCapViewController.m; sourceTree = "<group>"; };
+		8D674A511CD1A2C00003DD1A /* CustomGifCapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomGifCapViewController.xib; sourceTree = "<group>"; };
 		8D6C19221CCE060800F7DED4 /* locicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locicon.png; sourceTree = "<group>"; };
 		8D6C19251CCE20FF00F7DED4 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
 		8D6C19261CCE20FF00F7DED4 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
-		8D7CA9801CD0C33200DACB80 /* GifNaviController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifNaviController.h; sourceTree = "<group>"; };
-		8D7CA9811CD0C33200DACB80 /* GifNaviController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifNaviController.m; sourceTree = "<group>"; };
 		8DA2E8791CC0DBE000CEF048 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		8DA2E8821CC0F7D200CEF048 /* Sub@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sub@2x.png"; sourceTree = "<group>"; };
 		8DA2E8831CC0F7D200CEF048 /* Sub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sub.png; sourceTree = "<group>"; };
@@ -662,8 +664,6 @@
 				728004BA1C9D7CBA00057C0A /* MTTabController.m */,
 				7258B4C41CB3F55900B01BDF /* MineNaviCtrl.h */,
 				7258B4C51CB3F55900B01BDF /* MineNaviCtrl.m */,
-				8D7CA9801CD0C33200DACB80 /* GifNaviController.h */,
-				8D7CA9811CD0C33200DACB80 /* GifNaviController.m */,
 				8D42E62E1CB608E300B611F8 /* Start */,
 				8DA2E86F1CC0D6F000CEF048 /* Home */,
 				8DA2E8721CC0D71F00CEF048 /* Message */,
@@ -743,6 +743,9 @@
 				8D34EBA71CD0BAC80013B795 /* PreviewViewController.h */,
 				8D34EBA81CD0BAC80013B795 /* PreviewViewController.m */,
 				8D34EBA91CD0BAC80013B795 /* PreviewViewController.xib */,
+				8D674A4F1CD1A2C00003DD1A /* CustomGifCapViewController.h */,
+				8D674A501CD1A2C00003DD1A /* CustomGifCapViewController.m */,
+				8D674A511CD1A2C00003DD1A /* CustomGifCapViewController.xib */,
 			);
 			name = GIF;
 			sourceTree = "<group>";
@@ -990,6 +993,7 @@
 				8D42E65A1CB6284200B611F8 /* menuBTB.png in Resources */,
 				7230A3BE1CB1AA7A0068A037 /* StreamLayout@2x.png in Resources */,
 				728004911C9D76C900057C0A /* Main.storyboard in Resources */,
+				8D674A531CD1A2C00003DD1A /* CustomGifCapViewController.xib in Resources */,
 				8D42E6331CB6092100B611F8 /* LoginViewController.xib in Resources */,
 				8D34EB9A1CD0606D0013B795 /* getstart.png in Resources */,
 				7230A3A61CB1947F0068A037 /* location@2x.png in Resources */,
@@ -1097,7 +1101,6 @@
 				72FE4E311CB24F660012BEFF /* UIImage+ImageEffects.m in Sources */,
 				8D6C19271CCE20FF00F7DED4 /* FXBlurView.m in Sources */,
 				8D42E6321CB6092100B611F8 /* LoginViewController.m in Sources */,
-				8D7CA9821CD0C33200DACB80 /* GifNaviController.m in Sources */,
 				8D42E65D1CB6354B00B611F8 /* ExploreHeaderView.m in Sources */,
 				72F565CE1CA17E260015E029 /* NSGIF.m in Sources */,
 				728004BB1C9D7CBA00057C0A /* MTTabController.m in Sources */,
@@ -1112,6 +1115,7 @@
 				72FE4E3B1CB24FBC0012BEFF /* MGViewControllerDelegate.m in Sources */,
 				728004DA1C9D7FCD00057C0A /* ExploreViewController.m in Sources */,
 				7230A39E1CB18A8D0068A037 /* MessageModel.m in Sources */,
+				8D674A521CD1A2C00003DD1A /* CustomGifCapViewController.m in Sources */,
 				72F565CA1CA172C70015E029 /* GIFViewController.m in Sources */,
 				8DD0BC1A1CCF51C800621441 /* AllTagListViewController.m in Sources */,
 				8D34EBA51CD0A45E0013B795 /* SendPostViewController.m in Sources */,

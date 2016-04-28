@@ -37,10 +37,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="ZPA-EQ-qbT" kind="relationship" relationship="rootViewController" id="Smh-Kp-QDd"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dPd-Z4-ikK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-136.53333333333333" y="604.91999999999973"/>
+            <point key="canvasLocation" x="-124" y="456"/>
         </scene>
         <!--ExploreNav-->
         <scene sceneID="z0Z-oe-fn1">
@@ -860,7 +863,48 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aRg-Ij-vOV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="296" y="604"/>
+            <point key="canvasLocation" x="1027" y="456"/>
+        </scene>
+        <!--GIF-->
+        <scene sceneID="5YK-jk-w5G">
+            <objects>
+                <viewController title="GIF" id="ZPA-EQ-qbT" customClass="GIFViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tvy-tW-Twz"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZkS-d6-MBQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k8z-jE-2hh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIP-Mm-ii1">
+                                <rect key="frame" x="96" y="293" width="128" height="30"/>
+                                <color key="backgroundColor" red="0.84801714228658387" green="0.38679684276115478" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="GIF Screen Record"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2DP-Wn-Eq2">
+                                <rect key="frame" x="137" y="364" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzT-3m-Qpy">
+                                <rect key="frame" x="105" y="224" width="111" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="GIFMoment Cap"/>
+                                <connections>
+                                    <action selector="gifCap:" destination="ZPA-EQ-qbT" eventType="touchUpInside" id="pnK-Zk-VJf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lzg-jq-icR"/>
+                    <connections>
+                        <outlet property="gifMomentCapButton" destination="hzT-3m-Qpy" id="Jf9-r7-Pwn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cjG-zt-ZZm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="457" y="440"/>
         </scene>
     </scenes>
     <resources>

@@ -10,6 +10,6 @@
 #import "BaseViewController.h"
 
 @interface GIFViewController : BaseViewController
-@property (weak, nonatomic) IBOutlet UIButton *_gifCapButton;
+@property (weak, nonatomic) IBOutlet UIButton *gifMomentCapButton;
 
 @end
