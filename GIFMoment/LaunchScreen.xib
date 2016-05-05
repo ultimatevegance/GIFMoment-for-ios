@@ -11,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="367" height="531"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brand.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wlk-KW-UdD">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wlk-KW-UdD">
                     <rect key="frame" x="0.0" y="0.0" width="367" height="531"/>
                 </imageView>
             </subviews>
@@ -27,6 +27,6 @@
         </view>
     </objects>
     <resources>
-        <image name="brand.png" width="1536" height="2048"/>
+        <image name="start.png" width="1536" height="2048"/>
     </resources>
 </document>

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface PreviewViewController : UIViewController
-
+- (instancetype)initWithVideoURL : (NSURL*)videoURL;
 @end

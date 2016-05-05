@@ -15,5 +15,4 @@
 @property (weak, nonatomic) IBOutlet UIButton *timerButton;
 @property (weak, nonatomic) IBOutlet UIButton *lightButton;
 
-@property (weak, nonatomic) IBOutlet UIView *camView;
 @end

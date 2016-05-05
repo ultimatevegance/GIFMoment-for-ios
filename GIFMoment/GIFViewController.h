@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
-
+#import "LLSimpleCamera.h"
 @interface GIFViewController : BaseViewController
-@property (weak, nonatomic) IBOutlet UIButton *gifMomentCapButton;
+@property(nonatomic,strong)UIButton *gifCapButton;
 
+@property(nonatomic,strong)LLSimpleCamera *camera;
 @end

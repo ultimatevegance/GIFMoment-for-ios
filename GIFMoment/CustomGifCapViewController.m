@@ -7,87 +7,69 @@
 //
 
 #import "CustomGifCapViewController.h"
-#import <AVFoundation/AVFoundation.h>
+#import "LLSimpleCamera.h"
+#import "PreviewViewController.h"
 @interface CustomGifCapViewController ()
-@property(nonatomic,strong)AVCaptureSession *avCapSession;
-@property(nonatomic,strong)AVCaptureDeviceInput *videoInput;
-@property(nonatomic,strong)AVCaptureMovieFileOutput *movieOutput;
-@property(nonatomic,strong)AVCaptureVideoPreviewLayer *videoPreviewLayer;
 
+@property(nonatomic,strong)LLSimpleCamera *camera;
 @end
 
 @implementation CustomGifCapViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
-    [self initCapSession];
-
+    CGRect screenRect = [[UIScreen mainScreen] bounds ];
+    self.camera = [[LLSimpleCamera alloc] initWithQuality:AVCaptureSessionPresetMedium
+                                                 position:LLCameraPositionRear
+                                             videoEnabled:YES];
+    [self.camera attachToViewController:self withFrame:screenRect];
+    [self.capButton setImage:[UIImage imageNamed:@"CameraShot"] forState:UIControlStateNormal];
 
 
 }
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    if (self.avCapSession ) {
-        [self.avCapSession startRunning];
-    }
-}
-- (void)viewDidDisappear:(BOOL)animated{
-    [super viewDidDisappear:animated];
-    if (self.avCapSession) {
-        [self.avCapSession stopRunning];
-    }
+- (IBAction)videoCap :(id)sender{
+    NSURL *outputURL =[[[self applicationDocumentsDirectory]
+                        URLByAppendingPathComponent:@"videoFile"] URLByAppendingPathExtension:@"mov"];
+    if (!self.camera.isRecording) {
+        self.camChangeButton.hidden = YES;
+        self.lightButton.hidden = YES;
     
-    
-}
-- (void)initCapSession{
-    self.avCapSession = [[AVCaptureSession alloc]init];
-//    if ([self.avCapSession canSetSessionPreset:AVCaptureSessionPreset640x480]) {
-//        self.avCapSession.sessionPreset = AVCaptureSessionPreset640x480;
-//    }
-    AVCaptureDevice *capDevice = [self getCameraDeviceWithPosition:AVCaptureDevicePositionBack];
-    
-    //TODO :error Handler
-    AVCaptureDevice *audioDevice = [[AVCaptureDevice devicesWithMediaType:AVMediaTypeAudio] firstObject];
-    //TODO :error Handler
-    NSError *error = nil;
-    self.videoInput = [[AVCaptureDeviceInput alloc]initWithDevice:capDevice error:&error];
-    AVCaptureDeviceInput *audioInput = [AVCaptureDeviceInput deviceInputWithDevice:audioDevice error:&error];
-    if ([self.avCapSession canAddInput:self.videoInput]) {
-        [ _avCapSession addInput:self.videoInput];
-        [_avCapSession addInput:audioInput];
-        AVCaptureConnection *capConnection = [_movieOutput connectionWithMediaType:AVMediaTypeVideo];
-        if ([capConnection isVideoStabilizationSupported ]) {
-            capConnection.preferredVideoStabilizationMode=AVCaptureVideoStabilizationModeAuto;
+        
+        [self.capButton setImage:[UIImage imageNamed:@"CapButtonIconSelected"] forState:UIControlStateNormal];
+        [self.camera startRecordingWithOutputUrl:outputURL];
+
         }
+    else{
+        [self.camera stopRecording:^(LLSimpleCamera *camera, NSURL *outputFileUrl, NSError *error) {
+            [self.capButton setImage:[UIImage imageNamed:@"CameraShot"] forState:UIControlStateNormal];
+            self.camChangeButton.hidden = NO;
+            self.lightButton.hidden = NO;
+
+            PreviewViewController *previewVC = [[PreviewViewController alloc ]initWithVideoURL:outputURL];
+            previewVC.view.frame = self.view.frame;
+            previewVC.view.backgroundColor = [UIColor whiteColor];
+            NSLog(@"%@",outputURL );
+            [self presentViewController:previewVC animated:YES completion:nil];
+
+        }];
         
     }
-    if ([_avCapSession canAddOutput:_movieOutput]) {
-        [_avCapSession addOutput:_movieOutput];
-    }
-    _videoPreviewLayer = [[AVCaptureVideoPreviewLayer alloc]initWithSession:self.avCapSession];
-    _videoPreviewLayer.frame = CGRectMake(0, 0,self.view.frame.size.width,self.view.frame.size.height);
-    _videoPreviewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
-    _camView.layer.masksToBounds = YES;
-    [_camView.layer addSublayer:_videoPreviewLayer];
-    
-
 }
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    // start the camera
+    [self.camera start];
+}
+- (NSURL *)applicationDocumentsDirectory
+{
+    return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+}
+
+
 - (IBAction)cancel:(id)sender{
     [self dismissViewControllerAnimated:YES completion:nil];
 
-}
-- (AVCaptureDevice *)getCameraDeviceWithPosition : (AVCaptureDevicePosition *)position{
-    NSArray *cameras= [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo];
-    for (AVCaptureDevice *camera in cameras) {
-        if ([camera position] == position) {
-            return camera;
-        }
-    }
-    return nil;
-    
-    
-    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

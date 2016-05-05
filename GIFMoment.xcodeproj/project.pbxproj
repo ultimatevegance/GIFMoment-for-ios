@@ -63,7 +63,6 @@
 		728004EB1C9D887400057C0A /* mine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 728004E91C9D887400057C0A /* mine@2x.png */; };
 		72F565CA1CA172C70015E029 /* GIFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F565C91CA172C70015E029 /* GIFViewController.m */; };
 		72F565CE1CA17E260015E029 /* NSGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F565CD1CA17E260015E029 /* NSGIF.m */; };
-		72F565D11CA184330015E029 /* ModelGIFCapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F565D01CA184330015E029 /* ModelGIFCapViewController.m */; };
 		72F565D31CA18D810015E029 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72F565D21CA18D810015E029 /* MobileCoreServices.framework */; };
 		72FE4E241CB24EA40012BEFF /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE4E231CB24EA40012BEFF /* ProfileViewController.m */; };
 		72FE4E311CB24F660012BEFF /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE4E281CB24F660012BEFF /* UIImage+ImageEffects.m */; };
@@ -83,7 +82,6 @@
 		8D34EBA51CD0A45E0013B795 /* SendPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D34EBA31CD0A45E0013B795 /* SendPostViewController.m */; };
 		8D34EBA61CD0A45E0013B795 /* SendPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D34EBA41CD0A45E0013B795 /* SendPostViewController.xib */; };
 		8D34EBAA1CD0BAC80013B795 /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D34EBA81CD0BAC80013B795 /* PreviewViewController.m */; };
-		8D34EBAB1CD0BAC80013B795 /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D34EBA91CD0BAC80013B795 /* PreviewViewController.xib */; };
 		8D357A271CB4F1D30062D78E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D357A261CB4F1D30062D78E /* SystemConfiguration.framework */; };
 		8D357A291CB4F1F90062D78E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D357A281CB4F1F90062D78E /* CoreLocation.framework */; };
 		8D357A2B1CB4F2030062D78E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D357A2A1CB4F2030062D78E /* CoreTelephony.framework */; };
@@ -131,10 +129,17 @@
 		8D674A531CD1A2C00003DD1A /* CustomGifCapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D674A511CD1A2C00003DD1A /* CustomGifCapViewController.xib */; };
 		8D6C19231CCE060800F7DED4 /* locicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D6C19221CCE060800F7DED4 /* locicon.png */; };
 		8D6C19271CCE20FF00F7DED4 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6C19261CCE20FF00F7DED4 /* FXBlurView.m */; };
+		8D74F11B1CDAE509001D36E9 /* LLSimpleCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D74F1181CDAE509001D36E9 /* LLSimpleCamera.m */; };
+		8D74F11C1CDAE509001D36E9 /* UIImage+FixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D74F11A1CDAE509001D36E9 /* UIImage+FixOrientation.m */; };
+		8D74F11E1CDAF85C001D36E9 /* GifCapIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D74F11D1CDAF85C001D36E9 /* GifCapIcon@2x.png */; };
+		8D74F1211CDB07E0001D36E9 /* CapButtonIconSelected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D74F11F1CDB07E0001D36E9 /* CapButtonIconSelected@3x.png */; };
+		8D74F1221CDB07E0001D36E9 /* CapButtonIconSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D74F1201CDB07E0001D36E9 /* CapButtonIconSelected@2x.png */; };
+		8D74F1251CDB089C001D36E9 /* CapButtonIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D74F1231CDB089C001D36E9 /* CapButtonIcon@2x.png */; };
+		8D74F1261CDB089C001D36E9 /* CapButtonIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D74F1241CDB089C001D36E9 /* CapButtonIcon@3x.png */; };
 		8DA2E87A1CC0DBE000CEF048 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DA2E8791CC0DBE000CEF048 /* LaunchScreen.xib */; };
 		8DA2E8841CC0F7D200CEF048 /* Sub@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DA2E8821CC0F7D200CEF048 /* Sub@2x.png */; };
 		8DA2E8851CC0F7D200CEF048 /* Sub.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DA2E8831CC0F7D200CEF048 /* Sub.png */; };
-		8DCF6B021CAD716C00F6E83F /* brand.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DCF6B011CAD716C00F6E83F /* brand.png */; };
+		8DCF6B021CAD716C00F6E83F /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DCF6B011CAD716C00F6E83F /* start.png */; };
 		8DD0BC151CCF4BAC00621441 /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD0BC141CCF4BAC00621441 /* UserData.m */; };
 		8DD0BC171CCF50B500621441 /* allTageButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DD0BC161CCF50B500621441 /* allTageButton@2x.png */; };
 		8DD0BC1A1CCF51C800621441 /* AllTagListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD0BC191CCF51C800621441 /* AllTagListViewController.m */; };
@@ -244,8 +249,6 @@
 		72F565C91CA172C70015E029 /* GIFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFViewController.m; sourceTree = "<group>"; };
 		72F565CC1CA17E260015E029 /* NSGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSGIF.h; sourceTree = "<group>"; };
 		72F565CD1CA17E260015E029 /* NSGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSGIF.m; sourceTree = "<group>"; };
-		72F565CF1CA184330015E029 /* ModelGIFCapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelGIFCapViewController.h; sourceTree = "<group>"; };
-		72F565D01CA184330015E029 /* ModelGIFCapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelGIFCapViewController.m; sourceTree = "<group>"; };
 		72F565D21CA18D810015E029 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		72FE4E221CB24EA40012BEFF /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		72FE4E231CB24EA40012BEFF /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
@@ -277,7 +280,6 @@
 		8D34EBA41CD0A45E0013B795 /* SendPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendPostViewController.xib; sourceTree = "<group>"; };
 		8D34EBA71CD0BAC80013B795 /* PreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
 		8D34EBA81CD0BAC80013B795 /* PreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewViewController.m; sourceTree = "<group>"; };
-		8D34EBA91CD0BAC80013B795 /* PreviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreviewViewController.xib; sourceTree = "<group>"; };
 		8D357A261CB4F1D30062D78E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8D357A281CB4F1F90062D78E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8D357A2A1CB4F2030062D78E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -333,10 +335,19 @@
 		8D6C19221CCE060800F7DED4 /* locicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locicon.png; sourceTree = "<group>"; };
 		8D6C19251CCE20FF00F7DED4 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
 		8D6C19261CCE20FF00F7DED4 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
+		8D74F1171CDAE509001D36E9 /* LLSimpleCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSimpleCamera.h; sourceTree = "<group>"; };
+		8D74F1181CDAE509001D36E9 /* LLSimpleCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSimpleCamera.m; sourceTree = "<group>"; };
+		8D74F1191CDAE509001D36E9 /* UIImage+FixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FixOrientation.h"; sourceTree = "<group>"; };
+		8D74F11A1CDAE509001D36E9 /* UIImage+FixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FixOrientation.m"; sourceTree = "<group>"; };
+		8D74F11D1CDAF85C001D36E9 /* GifCapIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GifCapIcon@2x.png"; sourceTree = "<group>"; };
+		8D74F11F1CDB07E0001D36E9 /* CapButtonIconSelected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CapButtonIconSelected@3x.png"; sourceTree = "<group>"; };
+		8D74F1201CDB07E0001D36E9 /* CapButtonIconSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CapButtonIconSelected@2x.png"; sourceTree = "<group>"; };
+		8D74F1231CDB089C001D36E9 /* CapButtonIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CapButtonIcon@2x.png"; sourceTree = "<group>"; };
+		8D74F1241CDB089C001D36E9 /* CapButtonIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CapButtonIcon@3x.png"; sourceTree = "<group>"; };
 		8DA2E8791CC0DBE000CEF048 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		8DA2E8821CC0F7D200CEF048 /* Sub@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sub@2x.png"; sourceTree = "<group>"; };
 		8DA2E8831CC0F7D200CEF048 /* Sub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sub.png; sourceTree = "<group>"; };
-		8DCF6B011CAD716C00F6E83F /* brand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brand.png; sourceTree = "<group>"; };
+		8DCF6B011CAD716C00F6E83F /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
 		8DD0BC131CCF4BAC00621441 /* UserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
 		8DD0BC141CCF4BAC00621441 /* UserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserData.m; sourceTree = "<group>"; };
 		8DD0BC161CCF50B500621441 /* allTageButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "allTageButton@2x.png"; sourceTree = "<group>"; };
@@ -460,7 +471,7 @@
 			children = (
 				728004E11C9D821000057C0A /* IMAGES */,
 				728004C01C9D7E8000057C0A /* 3rdLi */,
-				8DCF6B011CAD716C00F6E83F /* brand.png */,
+				8DCF6B011CAD716C00F6E83F /* start.png */,
 				728004871C9D76C900057C0A /* main.m */,
 			);
 			name = "Supporting Files";
@@ -487,6 +498,7 @@
 		728004C01C9D7E8000057C0A /* 3rdLi */ = {
 			isa = PBXGroup;
 			children = (
+				8D74F1161CDAE509001D36E9 /* LLSimpleCamera */,
 				8D6C19241CCE20FF00F7DED4 /* FXBlurView */,
 				72FE4E251CB24F660012BEFF /* MGSpotyViewController */,
 				72495E3C1CA1B9AB0044154B /* UIImage+animatedGIF */,
@@ -498,6 +510,11 @@
 		728004E11C9D821000057C0A /* IMAGES */ = {
 			isa = PBXGroup;
 			children = (
+				8D74F1231CDB089C001D36E9 /* CapButtonIcon@2x.png */,
+				8D74F1241CDB089C001D36E9 /* CapButtonIcon@3x.png */,
+				8D74F11F1CDB07E0001D36E9 /* CapButtonIconSelected@3x.png */,
+				8D74F1201CDB07E0001D36E9 /* CapButtonIconSelected@2x.png */,
+				8D74F11D1CDAF85C001D36E9 /* GifCapIcon@2x.png */,
 				8D34EB9E1CD071C60013B795 /* ba.png */,
 				8D34EB911CD05ECF0013B795 /* intoex.png */,
 				8D34EB931CD05F740013B795 /* intoex2.png */,
@@ -655,6 +672,17 @@
 			path = FXBlurView;
 			sourceTree = "<group>";
 		};
+		8D74F1161CDAE509001D36E9 /* LLSimpleCamera */ = {
+			isa = PBXGroup;
+			children = (
+				8D74F1171CDAE509001D36E9 /* LLSimpleCamera.h */,
+				8D74F1181CDAE509001D36E9 /* LLSimpleCamera.m */,
+				8D74F1191CDAE509001D36E9 /* UIImage+FixOrientation.h */,
+				8D74F11A1CDAE509001D36E9 /* UIImage+FixOrientation.m */,
+			);
+			path = LLSimpleCamera;
+			sourceTree = "<group>";
+		};
 		8DA2E86B1CC0D68400CEF048 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -735,14 +763,11 @@
 			children = (
 				72F565C81CA172C70015E029 /* GIFViewController.h */,
 				72F565C91CA172C70015E029 /* GIFViewController.m */,
-				72F565CF1CA184330015E029 /* ModelGIFCapViewController.h */,
-				72F565D01CA184330015E029 /* ModelGIFCapViewController.m */,
 				8D34EBA21CD0A45E0013B795 /* SendPostViewController.h */,
 				8D34EBA31CD0A45E0013B795 /* SendPostViewController.m */,
 				8D34EBA41CD0A45E0013B795 /* SendPostViewController.xib */,
 				8D34EBA71CD0BAC80013B795 /* PreviewViewController.h */,
 				8D34EBA81CD0BAC80013B795 /* PreviewViewController.m */,
-				8D34EBA91CD0BAC80013B795 /* PreviewViewController.xib */,
 				8D674A4F1CD1A2C00003DD1A /* CustomGifCapViewController.h */,
 				8D674A501CD1A2C00003DD1A /* CustomGifCapViewController.m */,
 				8D674A511CD1A2C00003DD1A /* CustomGifCapViewController.xib */,
@@ -936,9 +961,11 @@
 			files = (
 				7230A3BC1CB1AA7A0068A037 /* LLocation@2x.png in Resources */,
 				8D42E63F1CB60CF300B611F8 /* MineHeaderView.xib in Resources */,
+				8D74F1251CDB089C001D36E9 /* CapButtonIcon@2x.png in Resources */,
 				7230A3B01CB19F820068A037 /* search@2x.png in Resources */,
 				722726D01C9D8DC1005BF2DD /* gif.png in Resources */,
 				8D34EB921CD05ECF0013B795 /* intoex.png in Resources */,
+				8D74F1261CDB089C001D36E9 /* CapButtonIcon@3x.png in Resources */,
 				8DD0BC261CCF60B900621441 /* download@2x.png in Resources */,
 				728004E71C9D821000057C0A /* tabbar@2x.png in Resources */,
 				722726BA1C9D8A68005BF2DD /* message@2x.png in Resources */,
@@ -961,7 +988,7 @@
 				8DA2E87A1CC0DBE000CEF048 /* LaunchScreen.xib in Resources */,
 				7230A3AD1CB19F820068A037 /* setting.png in Resources */,
 				728004EA1C9D887400057C0A /* mine.png in Resources */,
-				8DCF6B021CAD716C00F6E83F /* brand.png in Resources */,
+				8DCF6B021CAD716C00F6E83F /* start.png in Resources */,
 				8D42E66C1CB651BE00B611F8 /* 1.png in Resources */,
 				7230A3A81CB195A30068A037 /* sampleImage.png in Resources */,
 				7230A3A21CB1935F0068A037 /* time.png in Resources */,
@@ -988,12 +1015,12 @@
 				8D42E66D1CB651BE00B611F8 /* 2.png in Resources */,
 				728004931C9D76C900057C0A /* Assets.xcassets in Resources */,
 				8D42E64A1CB61F1400B611F8 /* logTFB.png in Resources */,
-				8D34EBAB1CD0BAC80013B795 /* PreviewViewController.xib in Resources */,
 				8D42E61D1CB5FDE600B611F8 /* link.png in Resources */,
 				8D42E65A1CB6284200B611F8 /* menuBTB.png in Resources */,
 				7230A3BE1CB1AA7A0068A037 /* StreamLayout@2x.png in Resources */,
 				728004911C9D76C900057C0A /* Main.storyboard in Resources */,
 				8D674A531CD1A2C00003DD1A /* CustomGifCapViewController.xib in Resources */,
+				8D74F1211CDB07E0001D36E9 /* CapButtonIconSelected@3x.png in Resources */,
 				8D42E6331CB6092100B611F8 /* LoginViewController.xib in Resources */,
 				8D34EB9A1CD0606D0013B795 /* getstart.png in Resources */,
 				7230A3A61CB1947F0068A037 /* location@2x.png in Resources */,
@@ -1008,11 +1035,13 @@
 				8DD0BC221CCF5FEF00621441 /* share@2x.png in Resources */,
 				8D42E6291CB6049A00B611F8 /* WechatIcon@3x.png in Resources */,
 				722726D11C9D8DC1005BF2DD /* gif@3x.png in Resources */,
+				8D74F1221CDB07E0001D36E9 /* CapButtonIconSelected@2x.png in Resources */,
 				8D42E61B1CB5FDE600B611F8 /* local.png in Resources */,
 				8D42E6481CB61F1400B611F8 /* LogoStart.png in Resources */,
 				7230A3A51CB1947F0068A037 /* location.png in Resources */,
 				8D42E6171CB5FDE600B611F8 /* mail@2x.png in Resources */,
 				8DA2E8841CC0F7D200CEF048 /* Sub@2x.png in Resources */,
+				8D74F11E1CDAF85C001D36E9 /* GifCapIcon@2x.png in Resources */,
 				7230A3A11CB1935F0068A037 /* time@2x.png in Resources */,
 				8D42E6281CB6049A00B611F8 /* QQIcon@2x.png in Resources */,
 				8D42E6531CB6245200B611F8 /* accountIcon@2x.png in Resources */,
@@ -1108,7 +1137,6 @@
 				72FE4E341CB24F660012BEFF /* MGSpotyViewController.m in Sources */,
 				72FE4E3A1CB24FBC0012BEFF /* MGViewControllerDataSource.m in Sources */,
 				7230A3911CB177A40068A037 /* MSTableViewCell.m in Sources */,
-				72F565D11CA184330015E029 /* ModelGIFCapViewController.m in Sources */,
 				728004D71C9D7FBD00057C0A /* HomeViewController.m in Sources */,
 				7230A38A1CB174410068A037 /* MSTableView.m in Sources */,
 				7230A3961CB17CB20068A037 /* MSStatus.m in Sources */,
@@ -1130,9 +1158,11 @@
 				72FE4E321CB24F660012BEFF /* UIImageView+LBBlurredImage.m in Sources */,
 				728004881C9D76C900057C0A /* main.m in Sources */,
 				728004DD1C9D7FF000057C0A /* MessageViewController.m in Sources */,
+				8D74F11B1CDAE509001D36E9 /* LLSimpleCamera.m in Sources */,
 				8DD0BC2C1CCF724700621441 /* MessageDetailViewController.m in Sources */,
 				8D42E6371CB6093A00B611F8 /* SignUpViewController.m in Sources */,
 				8D34EB9D1CD060F70013B795 /* MyCustomPanel.m in Sources */,
+				8D74F11C1CDAE509001D36E9 /* UIImage+FixOrientation.m in Sources */,
 				72FE4E331CB24F660012BEFF /* MGSpotyView.m in Sources */,
 				8D42E6661CB63CF300B611F8 /* TagViewCell.m in Sources */,
 			);
