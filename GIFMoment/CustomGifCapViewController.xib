@@ -51,13 +51,13 @@
                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="46" id="UCT-bw-BiP">
-                            <variation key="heightClass=regular" constant="30"/>
+                            <variation key="heightClass=regular" constant="40"/>
                         </constraint>
                         <constraint firstAttribute="height" constant="41" id="j41-ei-e40">
-                            <variation key="heightClass=regular" constant="26"/>
+                            <variation key="heightClass=regular" constant="40"/>
                         </constraint>
                     </constraints>
-                    <state key="normal" image="CamChange"/>
+                    <state key="normal" image="cameraChange.png"/>
                     <variation key="default">
                         <mask key="constraints">
                             <exclude reference="UCT-bw-BiP"/>
@@ -70,6 +70,9 @@
                             <include reference="j41-ei-e40"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <action selector="cameraChange:" destination="-1" eventType="touchUpInside" id="jkr-Dt-K7y"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I47-OL-tF6" userLabel="TimerButton">
                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -118,31 +121,9 @@
                             <include reference="zsI-B8-ZOI"/>
                         </mask>
                     </variation>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yC7-XD-PJC">
-                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="41" id="BwN-o4-cGT">
-                            <variation key="heightClass=regular" constant="26"/>
-                        </constraint>
-                        <constraint firstAttribute="width" constant="95" id="WCq-F5-Ebd">
-                            <variation key="heightClass=regular" constant="60"/>
-                        </constraint>
-                    </constraints>
-                    <state key="normal" image="LightOFF"/>
-                    <state key="selected" image="LightOn"/>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="BwN-o4-cGT"/>
-                            <exclude reference="WCq-F5-Ebd"/>
-                        </mask>
-                    </variation>
-                    <variation key="heightClass=regular">
-                        <mask key="constraints">
-                            <include reference="BwN-o4-cGT"/>
-                            <include reference="WCq-F5-Ebd"/>
-                        </mask>
-                    </variation>
+                    <connections>
+                        <action selector="cameraViewModeChange:" destination="-1" eventType="touchUpInside" id="1Cj-kz-S4C"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhU-hC-V2R">
                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -170,15 +151,42 @@
                         <action selector="videoCap:" destination="-1" eventType="touchUpInside" id="hvC-Zu-oN2"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yC7-XD-PJC">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="BwN-o4-cGT">
+                            <variation key="heightClass=regular" constant="40"/>
+                        </constraint>
+                        <constraint firstAttribute="width" constant="95" id="WCq-F5-Ebd">
+                            <variation key="heightClass=regular" constant="40"/>
+                        </constraint>
+                    </constraints>
+                    <state key="normal" image="LightButton.png"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="BwN-o4-cGT"/>
+                            <exclude reference="WCq-F5-Ebd"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular">
+                        <mask key="constraints">
+                            <include reference="BwN-o4-cGT"/>
+                            <include reference="WCq-F5-Ebd"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="flashToggle:" destination="-1" eventType="touchUpInside" id="7Ol-UQ-0fW"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="Oc0-YT-Ff7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="47" id="0V1-tu-5Eq"/>
+                <constraint firstItem="Oc0-YT-Ff7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="0V1-tu-5Eq"/>
                 <constraint firstAttribute="bottom" secondItem="8i2-VG-Zev" secondAttribute="bottom" constant="37" id="0Xd-GL-PSo"/>
                 <constraint firstItem="lhU-hC-V2R" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="B64-xV-bYi"/>
                 <constraint firstItem="lhU-hC-V2R" firstAttribute="leading" secondItem="8i2-VG-Zev" secondAttribute="trailing" constant="70" id="Bo7-dR-jbi"/>
                 <constraint firstItem="I47-OL-tF6" firstAttribute="leading" secondItem="yC7-XD-PJC" secondAttribute="trailing" constant="26" id="CHS-7M-QTj">
-                    <variation key="heightClass=regular" constant="70"/>
+                    <variation key="heightClass=regular" constant="80"/>
                 </constraint>
                 <constraint firstAttribute="bottom" secondItem="lhU-hC-V2R" secondAttribute="bottom" constant="17" id="Ita-7F-QGa"/>
                 <constraint firstItem="I47-OL-tF6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="L5n-Ws-SIx"/>
@@ -189,7 +197,9 @@
                 <constraint firstItem="Oc0-YT-Ff7" firstAttribute="leading" secondItem="I47-OL-tF6" secondAttribute="trailing" constant="53" id="fmU-8q-tAB">
                     <variation key="heightClass=regular" constant="80"/>
                 </constraint>
-                <constraint firstItem="yC7-XD-PJC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="47" id="jFL-fx-sQu"/>
+                <constraint firstItem="yC7-XD-PJC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="47" id="jFL-fx-sQu">
+                    <variation key="heightClass=regular" constant="40"/>
+                </constraint>
                 <constraint firstAttribute="bottom" secondItem="oqs-o1-rxc" secondAttribute="bottom" constant="37" id="rIJ-oi-NTa"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
@@ -200,8 +210,8 @@
                     <exclude reference="Oc0-YT-Ff7"/>
                     <exclude reference="I47-OL-tF6"/>
                     <exclude reference="oqs-o1-rxc"/>
-                    <exclude reference="yC7-XD-PJC"/>
                     <exclude reference="lhU-hC-V2R"/>
+                    <exclude reference="yC7-XD-PJC"/>
                 </mask>
                 <mask key="constraints">
                     <exclude reference="0Xd-GL-PSo"/>
@@ -224,8 +234,8 @@
                     <include reference="Oc0-YT-Ff7"/>
                     <include reference="I47-OL-tF6"/>
                     <include reference="oqs-o1-rxc"/>
-                    <include reference="yC7-XD-PJC"/>
                     <include reference="lhU-hC-V2R"/>
+                    <include reference="yC7-XD-PJC"/>
                 </mask>
                 <mask key="constraints">
                     <include reference="0Xd-GL-PSo"/>
@@ -247,10 +257,9 @@
     </objects>
     <resources>
         <image name="4SquareCapMode" width="51" height="49"/>
-        <image name="CamChange" width="50" height="46"/>
-        <image name="LightOFF" width="95" height="44"/>
-        <image name="LightOn" width="80" height="42"/>
+        <image name="LightButton.png" width="60" height="60"/>
         <image name="Timer" width="115" height="61"/>
+        <image name="cameraChange.png" width="60" height="60"/>
         <image name="cancelBT" width="53" height="52"/>
     </resources>
 </document>

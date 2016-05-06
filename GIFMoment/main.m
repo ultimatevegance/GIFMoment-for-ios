@@ -1,4 +1,4 @@
-//
+///Users/monster/Desktop/GIFMomentProject/GIFMoment-for-ios/GIFMoment/main.m
 //  main.m
 //  GIFMoment
 //

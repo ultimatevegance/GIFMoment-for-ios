@@ -17,15 +17,21 @@
 @implementation CustomGifCapViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     CGRect screenRect = [[UIScreen mainScreen] bounds ];
     self.camera = [[LLSimpleCamera alloc] initWithQuality:AVCaptureSessionPresetMedium
                                                  position:LLCameraPositionRear
                                              videoEnabled:YES];
     [self.camera attachToViewController:self withFrame:screenRect];
     [self.capButton setImage:[UIImage imageNamed:@"CameraShot"] forState:UIControlStateNormal];
-
-
+    [self setNeedsStatusBarAppearanceUpdate];
+    
 }
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
 - (IBAction)videoCap :(id)sender{
     NSURL *outputURL =[[[self applicationDocumentsDirectory]
                         URLByAppendingPathComponent:@"videoFile"] URLByAppendingPathExtension:@"mov"];
@@ -53,6 +59,42 @@
         }];
         
     }
+}
+- (IBAction)cameraChange:(id)sender{
+    
+    [self.camera togglePosition];
+    
+    
+}
+- (IBAction)flashToggle:(id)sender{
+    if (self.camera.flash == LLCameraFlashOff) {
+        BOOL isON  = [self.camera updateFlashMode:LLCameraFlashOn];
+        if (isON) {
+            self.lightButton.selected = YES;
+            [self.lightButton setTintColor:[UIColor greenColor]];
+            
+        }
+    }
+    else{
+        BOOL isOFF = [self.camera updateFlashMode:UIImagePickerControllerCameraFlashModeOff];
+        if (isOFF) {
+            self.lightButton.selected = NO;
+            [self.lightButton setTintColor:[UIColor whiteColor]];
+
+
+        }
+        
+        
+    }
+    
+}
+- (IBAction)cameraViewModeChange:(id)sender{
+    
+    
+    
+    
+    
+    
 }
 - (void)viewWillAppear:(BOOL)animated
 {

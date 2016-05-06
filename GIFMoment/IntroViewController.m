@@ -10,6 +10,7 @@
 #import "MYIntroductionPanel.h"
 #import "MYBlurIntroductionView.h"
 #import "MyCustomPanel.h"
+#import "LoginViewController.h"
 @interface IntroViewController ()
 
 @end
@@ -34,7 +35,7 @@
     panel3.PanelTitleLabel.textAlignment = NSTextAlignmentCenter;
     panel3.PanelDescriptionLabel.textAlignment = NSTextAlignmentCenter;
 
-    MyCustomPanel *pannel4 = [[MyCustomPanel alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) nibNamed:@"CIntro4"];
+    MyCustomPanel *pannel4 = [[MyCustomPanel alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) nibNamed:@"IntroPanel4"];
     
     MYBlurIntroductionView *myIntroView = [[MYBlurIntroductionView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     myIntroView.delegate = self;

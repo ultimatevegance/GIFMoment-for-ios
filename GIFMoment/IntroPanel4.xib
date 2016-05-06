@@ -11,15 +11,15 @@
             <rect key="frame" x="0.0" y="0.0" width="319" height="532"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="getstart.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kwt-Yx-qwU" customClass="M">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="getstart.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kwt-Yx-qwU" customClass="M">
                     <rect key="frame" x="0.0" y="0.0" width="319" height="532"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZO0-Vw-ekU">
-                    <rect key="frame" x="44" y="411" width="230" height="30"/>
+                    <rect key="frame" x="44" y="411" width="230" height="45"/>
                     <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="230" id="Ib5-AE-hzY"/>
-                        <constraint firstAttribute="height" constant="30" id="yru-2Q-J4g"/>
+                        <constraint firstAttribute="height" constant="45" id="yru-2Q-J4g"/>
                     </constraints>
                     <state key="normal" title="Start Your GIFMoment">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -36,6 +36,9 @@
                 <constraint firstItem="Kwt-Yx-qwU" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="l12-w6-VZu"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="startButton" destination="ZO0-Vw-ekU" id="3UC-uV-uSU"/>
+            </connections>
             <point key="canvasLocation" x="251.5" y="316"/>
         </view>
     </objects>

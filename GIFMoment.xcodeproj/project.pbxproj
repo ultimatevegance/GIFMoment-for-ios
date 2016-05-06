@@ -71,10 +71,16 @@
 		72FE4E341CB24F660012BEFF /* MGSpotyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE4E2E1CB24F660012BEFF /* MGSpotyViewController.m */; };
 		72FE4E3A1CB24FBC0012BEFF /* MGViewControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE4E371CB24FBC0012BEFF /* MGViewControllerDataSource.m */; };
 		72FE4E3B1CB24FBC0012BEFF /* MGViewControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE4E391CB24FBC0012BEFF /* MGViewControllerDelegate.m */; };
+		8D1B80A51CDC370B002F0877 /* cameraChange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D1B80A31CDC370B002F0877 /* cameraChange@2x.png */; };
+		8D1B80A61CDC370B002F0877 /* gifcapIconff@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D1B80A41CDC370B002F0877 /* gifcapIconff@2x.png */; };
+		8D1B80A91CDC38CB002F0877 /* localContent@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D1B80A71CDC38CB002F0877 /* localContent@2x.png */; };
+		8D1B80AC1CDC3B9E002F0877 /* LightButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D1B80AB1CDC3B9E002F0877 /* LightButton@2x.png */; };
+		8D1B80AE1CDC3BA2002F0877 /* device@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D1B80AD1CDC3BA2002F0877 /* device@2x.png */; };
+		8D1B80B01CDC4AE2002F0877 /* line1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D1B80AF1CDC4AE2002F0877 /* line1@2x.png */; };
 		8D34EB921CD05ECF0013B795 /* intoex.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D34EB911CD05ECF0013B795 /* intoex.png */; };
 		8D34EB941CD05F740013B795 /* intoex2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D34EB931CD05F740013B795 /* intoex2.png */; };
 		8D34EB961CD05F7A0013B795 /* intoex3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D34EB951CD05F7A0013B795 /* intoex3.png */; };
-		8D34EB981CD060040013B795 /* CIntro4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D34EB971CD060040013B795 /* CIntro4.xib */; };
+		8D34EB981CD060040013B795 /* IntroPanel4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D34EB971CD060040013B795 /* IntroPanel4.xib */; };
 		8D34EB9A1CD0606D0013B795 /* getstart.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D34EB991CD0606D0013B795 /* getstart.png */; };
 		8D34EB9D1CD060F70013B795 /* MyCustomPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D34EB9C1CD060F70013B795 /* MyCustomPanel.m */; };
 		8D34EB9F1CD071C60013B795 /* ba.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D34EB9E1CD071C60013B795 /* ba.png */; };
@@ -109,7 +115,7 @@
 		8D42E63F1CB60CF300B611F8 /* MineHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D42E63E1CB60CF300B611F8 /* MineHeaderView.xib */; };
 		8D42E6441CB60EC100B611F8 /* MineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D42E6431CB60EC100B611F8 /* MineHeaderView.m */; };
 		8D42E6481CB61F1400B611F8 /* LogoStart.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D42E6451CB61F1400B611F8 /* LogoStart.png */; };
-		8D42E6491CB61F1400B611F8 /* logoStart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D42E6461CB61F1400B611F8 /* logoStart@2x.png */; };
+		8D42E6491CB61F1400B611F8 /* LogoStart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D42E6461CB61F1400B611F8 /* LogoStart@2x.png */; };
 		8D42E64A1CB61F1400B611F8 /* logTFB.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D42E6471CB61F1400B611F8 /* logTFB.png */; };
 		8D42E64C1CB6206D00B611F8 /* loginBTB.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D42E64B1CB6206D00B611F8 /* loginBTB.png */; };
 		8D42E64E1CB6215F00B611F8 /* signUpBTB.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D42E64D1CB6215F00B611F8 /* signUpBTB.png */; };
@@ -134,8 +140,6 @@
 		8D74F11E1CDAF85C001D36E9 /* GifCapIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D74F11D1CDAF85C001D36E9 /* GifCapIcon@2x.png */; };
 		8D74F1211CDB07E0001D36E9 /* CapButtonIconSelected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D74F11F1CDB07E0001D36E9 /* CapButtonIconSelected@3x.png */; };
 		8D74F1221CDB07E0001D36E9 /* CapButtonIconSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D74F1201CDB07E0001D36E9 /* CapButtonIconSelected@2x.png */; };
-		8D74F1251CDB089C001D36E9 /* CapButtonIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D74F1231CDB089C001D36E9 /* CapButtonIcon@2x.png */; };
-		8D74F1261CDB089C001D36E9 /* CapButtonIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D74F1241CDB089C001D36E9 /* CapButtonIcon@3x.png */; };
 		8DA2E87A1CC0DBE000CEF048 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DA2E8791CC0DBE000CEF048 /* LaunchScreen.xib */; };
 		8DA2E8841CC0F7D200CEF048 /* Sub@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DA2E8821CC0F7D200CEF048 /* Sub@2x.png */; };
 		8DA2E8851CC0F7D200CEF048 /* Sub.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DA2E8831CC0F7D200CEF048 /* Sub.png */; };
@@ -266,10 +270,16 @@
 		72FE4E371CB24FBC0012BEFF /* MGViewControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGViewControllerDataSource.m; sourceTree = "<group>"; };
 		72FE4E381CB24FBC0012BEFF /* MGViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGViewControllerDelegate.h; sourceTree = "<group>"; };
 		72FE4E391CB24FBC0012BEFF /* MGViewControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGViewControllerDelegate.m; sourceTree = "<group>"; };
+		8D1B80A31CDC370B002F0877 /* cameraChange@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraChange@2x.png"; sourceTree = "<group>"; };
+		8D1B80A41CDC370B002F0877 /* gifcapIconff@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gifcapIconff@2x.png"; sourceTree = "<group>"; };
+		8D1B80A71CDC38CB002F0877 /* localContent@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "localContent@2x.png"; sourceTree = "<group>"; };
+		8D1B80AB1CDC3B9E002F0877 /* LightButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LightButton@2x.png"; sourceTree = "<group>"; };
+		8D1B80AD1CDC3BA2002F0877 /* device@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "device@2x.png"; sourceTree = "<group>"; };
+		8D1B80AF1CDC4AE2002F0877 /* line1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line1@2x.png"; sourceTree = "<group>"; };
 		8D34EB911CD05ECF0013B795 /* intoex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intoex.png; sourceTree = "<group>"; };
 		8D34EB931CD05F740013B795 /* intoex2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intoex2.png; sourceTree = "<group>"; };
 		8D34EB951CD05F7A0013B795 /* intoex3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intoex3.png; sourceTree = "<group>"; };
-		8D34EB971CD060040013B795 /* CIntro4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CIntro4.xib; sourceTree = "<group>"; };
+		8D34EB971CD060040013B795 /* IntroPanel4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntroPanel4.xib; sourceTree = "<group>"; };
 		8D34EB991CD0606D0013B795 /* getstart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = getstart.png; sourceTree = "<group>"; };
 		8D34EB9B1CD060F70013B795 /* MyCustomPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomPanel.h; sourceTree = "<group>"; };
 		8D34EB9C1CD060F70013B795 /* MyCustomPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomPanel.m; sourceTree = "<group>"; };
@@ -311,7 +321,7 @@
 		8D42E6421CB60EC100B611F8 /* MineHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineHeaderView.h; sourceTree = "<group>"; };
 		8D42E6431CB60EC100B611F8 /* MineHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineHeaderView.m; sourceTree = "<group>"; };
 		8D42E6451CB61F1400B611F8 /* LogoStart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoStart.png; sourceTree = "<group>"; };
-		8D42E6461CB61F1400B611F8 /* logoStart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logoStart@2x.png"; sourceTree = "<group>"; };
+		8D42E6461CB61F1400B611F8 /* LogoStart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LogoStart@2x.png"; sourceTree = "<group>"; };
 		8D42E6471CB61F1400B611F8 /* logTFB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logTFB.png; sourceTree = "<group>"; };
 		8D42E64B1CB6206D00B611F8 /* loginBTB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginBTB.png; sourceTree = "<group>"; };
 		8D42E64D1CB6215F00B611F8 /* signUpBTB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signUpBTB.png; sourceTree = "<group>"; };
@@ -342,8 +352,6 @@
 		8D74F11D1CDAF85C001D36E9 /* GifCapIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GifCapIcon@2x.png"; sourceTree = "<group>"; };
 		8D74F11F1CDB07E0001D36E9 /* CapButtonIconSelected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CapButtonIconSelected@3x.png"; sourceTree = "<group>"; };
 		8D74F1201CDB07E0001D36E9 /* CapButtonIconSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CapButtonIconSelected@2x.png"; sourceTree = "<group>"; };
-		8D74F1231CDB089C001D36E9 /* CapButtonIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CapButtonIcon@2x.png"; sourceTree = "<group>"; };
-		8D74F1241CDB089C001D36E9 /* CapButtonIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CapButtonIcon@3x.png"; sourceTree = "<group>"; };
 		8DA2E8791CC0DBE000CEF048 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		8DA2E8821CC0F7D200CEF048 /* Sub@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sub@2x.png"; sourceTree = "<group>"; };
 		8DA2E8831CC0F7D200CEF048 /* Sub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sub.png; sourceTree = "<group>"; };
@@ -510,8 +518,12 @@
 		728004E11C9D821000057C0A /* IMAGES */ = {
 			isa = PBXGroup;
 			children = (
-				8D74F1231CDB089C001D36E9 /* CapButtonIcon@2x.png */,
-				8D74F1241CDB089C001D36E9 /* CapButtonIcon@3x.png */,
+				8D1B80AF1CDC4AE2002F0877 /* line1@2x.png */,
+				8D1B80AD1CDC3BA2002F0877 /* device@2x.png */,
+				8D1B80AB1CDC3B9E002F0877 /* LightButton@2x.png */,
+				8D1B80A71CDC38CB002F0877 /* localContent@2x.png */,
+				8D1B80A31CDC370B002F0877 /* cameraChange@2x.png */,
+				8D1B80A41CDC370B002F0877 /* gifcapIconff@2x.png */,
 				8D74F11F1CDB07E0001D36E9 /* CapButtonIconSelected@3x.png */,
 				8D74F1201CDB07E0001D36E9 /* CapButtonIconSelected@2x.png */,
 				8D74F11D1CDAF85C001D36E9 /* GifCapIcon@2x.png */,
@@ -539,7 +551,7 @@
 				8D42E64D1CB6215F00B611F8 /* signUpBTB.png */,
 				8D42E64B1CB6206D00B611F8 /* loginBTB.png */,
 				8D42E6451CB61F1400B611F8 /* LogoStart.png */,
-				8D42E6461CB61F1400B611F8 /* logoStart@2x.png */,
+				8D42E6461CB61F1400B611F8 /* LogoStart@2x.png */,
 				8D42E6471CB61F1400B611F8 /* logTFB.png */,
 				8D42E6201CB6049A00B611F8 /* WeiboIcon@2x.png */,
 				8D42E6211CB6049A00B611F8 /* WeiboIcon@3x.png */,
@@ -647,7 +659,7 @@
 				8D42E6361CB6093A00B611F8 /* SignUpViewController.xib */,
 				8D42E6391CB6096E00B611F8 /* IntroViewController.h */,
 				8D42E63A1CB6096E00B611F8 /* IntroViewController.m */,
-				8D34EB971CD060040013B795 /* CIntro4.xib */,
+				8D34EB971CD060040013B795 /* IntroPanel4.xib */,
 				8D34EB9B1CD060F70013B795 /* MyCustomPanel.h */,
 				8D34EB9C1CD060F70013B795 /* MyCustomPanel.m */,
 			);
@@ -961,11 +973,9 @@
 			files = (
 				7230A3BC1CB1AA7A0068A037 /* LLocation@2x.png in Resources */,
 				8D42E63F1CB60CF300B611F8 /* MineHeaderView.xib in Resources */,
-				8D74F1251CDB089C001D36E9 /* CapButtonIcon@2x.png in Resources */,
 				7230A3B01CB19F820068A037 /* search@2x.png in Resources */,
 				722726D01C9D8DC1005BF2DD /* gif.png in Resources */,
 				8D34EB921CD05ECF0013B795 /* intoex.png in Resources */,
-				8D74F1261CDB089C001D36E9 /* CapButtonIcon@3x.png in Resources */,
 				8DD0BC261CCF60B900621441 /* download@2x.png in Resources */,
 				728004E71C9D821000057C0A /* tabbar@2x.png in Resources */,
 				722726BA1C9D8A68005BF2DD /* message@2x.png in Resources */,
@@ -975,31 +985,36 @@
 				8D42E61E1CB5FDE600B611F8 /* link@2x.png in Resources */,
 				8D42E6131CB5FDE600B611F8 /* info.png in Resources */,
 				722726C81C9D8C76005BF2DD /* explore@3x.png in Resources */,
+				8D1B80AE1CDC3BA2002F0877 /* device@2x.png in Resources */,
 				8D42E6271CB6049A00B611F8 /* WeiboIcon@3x.png in Resources */,
 				722726BB1C9D8A68005BF2DD /* message@3x.png in Resources */,
 				8DA2E8851CC0F7D200CEF048 /* Sub.png in Resources */,
 				722726C41C9D8C76005BF2DD /* home@2x.png in Resources */,
 				8D42E6151CB5FDE600B611F8 /* noti@2x.png in Resources */,
-				8D34EB981CD060040013B795 /* CIntro4.xib in Resources */,
+				8D34EB981CD060040013B795 /* IntroPanel4.xib in Resources */,
 				722726B61C9D8A55005BF2DD /* mine@3x.png in Resources */,
 				8D42E6161CB5FDE600B611F8 /* info@2x.png in Resources */,
 				722726C51C9D8C76005BF2DD /* home@3x.png in Resources */,
+				8D1B80A61CDC370B002F0877 /* gifcapIconff@2x.png in Resources */,
 				8D42E6141CB5FDE600B611F8 /* mail.png in Resources */,
 				8DA2E87A1CC0DBE000CEF048 /* LaunchScreen.xib in Resources */,
 				7230A3AD1CB19F820068A037 /* setting.png in Resources */,
 				728004EA1C9D887400057C0A /* mine.png in Resources */,
+				8D1B80A51CDC370B002F0877 /* cameraChange@2x.png in Resources */,
 				8DCF6B021CAD716C00F6E83F /* start.png in Resources */,
 				8D42E66C1CB651BE00B611F8 /* 1.png in Resources */,
 				7230A3A81CB195A30068A037 /* sampleImage.png in Resources */,
 				7230A3A21CB1935F0068A037 /* time.png in Resources */,
+				8D1B80B01CDC4AE2002F0877 /* line1@2x.png in Resources */,
 				8D42E66F1CB651BE00B611F8 /* 0.png in Resources */,
-				8D42E6491CB61F1400B611F8 /* logoStart@2x.png in Resources */,
+				8D42E6491CB61F1400B611F8 /* LogoStart@2x.png in Resources */,
 				7230A3AF1CB19F820068A037 /* search.png in Resources */,
 				8D42E6261CB6049A00B611F8 /* WeiboIcon@2x.png in Resources */,
 				722726C61C9D8C76005BF2DD /* explore.png in Resources */,
 				8DD0BC2E1CCF757E00621441 /* DetailPostView.xib in Resources */,
 				7230A3981CB187170068A037 /* MessageCell.xib in Resources */,
 				8D42E6561CB6245200B611F8 /* accountIcon.png in Resources */,
+				8D1B80A91CDC38CB002F0877 /* localContent@2x.png in Resources */,
 				8D34EB941CD05F740013B795 /* intoex2.png in Resources */,
 				7230A3931CB177CC0068A037 /* MSCell.xib in Resources */,
 				8D42E6551CB6245200B611F8 /* passwordIcon@2x.png in Resources */,
@@ -1047,6 +1062,7 @@
 				8D42E6531CB6245200B611F8 /* accountIcon@2x.png in Resources */,
 				7230A3AE1CB19F820068A037 /* setting@2x.png in Resources */,
 				8D6C19231CCE060800F7DED4 /* locicon.png in Resources */,
+				8D1B80AC1CDC3B9E002F0877 /* LightButton@2x.png in Resources */,
 				8DD0BC171CCF50B500621441 /* allTageButton@2x.png in Resources */,
 				8DD0BC251CCF60B900621441 /* like@2x.png in Resources */,
 				8D42E6591CB6284200B611F8 /* menuBTB@2x.png in Resources */,

@@ -45,8 +45,14 @@
 
 
     }
-    
+    [self setNeedsStatusBarAppearanceUpdate];
+
 }
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
 - (void)doSomeWorkWithMixedProgress {
     MBProgressHUD *hud = [MBProgressHUD HUDForView:self.view];
     // Indeterminate mode

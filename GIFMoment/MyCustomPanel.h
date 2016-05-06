@@ -9,5 +9,6 @@
 #import <MYBlurIntroductionView/MYBlurIntroductionView.h>
 
 @interface MyCustomPanel : MYIntroductionPanel
+@property (weak, nonatomic) IBOutlet UIButton *startButton;
 
 @end
