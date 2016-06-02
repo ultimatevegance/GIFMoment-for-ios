@@ -36,8 +36,8 @@
     
     
     ExploreHeaderView  * headerView = [[ExploreHeaderView alloc]init];
-    headerView.frame =CGRectMake(0, 0, self.view.frame.size.width, 350);
-    headerView.headerScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0,screenW , 120)];
+    headerView.frame =CGRectMake(0, 0, self.view.frame.size.width, 450);
+    headerView.headerScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0,screenW , 200)];
     headerView.tagLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, headerView.headerScrollView.frame.size.height, screenW, 20)];
     [headerView.tagLabel setText:@"Featured Tag"];
     headerView.tagLabel.textAlignment = NSTextAlignmentCenter;
@@ -49,7 +49,7 @@
     flowLayout.itemSize = CGSizeMake(80, 80);
 //    flowLayout.headerReferenceSize = CGSizeMake(0, 30);
     flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-    headerView.headerCollectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, headerView.headerScrollView.frame.size.height + 20, screenW, 190) collectionViewLayout:flowLayout];
+    headerView.headerCollectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, headerView.headerScrollView.frame.size.height + 20, screenW, 230) collectionViewLayout:flowLayout];
     headerView.featureLabel = [[UILabel alloc]initWithFrame:CGRectMake(0,headerView.headerCollectionView.frame.size.height + 140, screenW, 20)];
     [headerView.featureLabel setText:@"--Top On GIFMoment And Trending--"];
     headerView.featureLabel.textAlignment = NSTextAlignmentCenter;

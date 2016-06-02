@@ -29,6 +29,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SDCycleScrollView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>TGCameraViewController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,7 +47,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>218632F8FD3B881787D5E8480164ECC7</key>
+		<key>223048DF2B803F8344B4EC904DC1FEF1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>33984A44B1F8B042E09B819CD3DB2F89</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,7 +62,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>87B83650422DDBB3B7A9145BCEA33D82</key>
+		<key>4A7DF8EBC5F62F8895FE752DF653B325</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AD45A6FA07BBAC31734AA6DA7E48DB0E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
