@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FoldingTabBar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>LeanCloudSocial.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,12 +52,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>223048DF2B803F8344B4EC904DC1FEF1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>33984A44B1F8B042E09B819CD3DB2F89</key>
+		<key>07F9835FADC9E495D05B1F030D13C270</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,17 +62,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4A7DF8EBC5F62F8895FE752DF653B325</key>
+		<key>9145E070690055EA2D82D264E78B0F71</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AD45A6FA07BBAC31734AA6DA7E48DB0E</key>
+		<key>9303FE61B2B02AB0AAC6CAC60FA554B8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ADEE508C36BA5FE5015B991BA91E6C2F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>CDF69CBB316F576EA4926E5CEEC1531C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E2101CA50B235B124BCBA408ED282926</key>
 		<dict>
 			<key>primary</key>
 			<true/>
